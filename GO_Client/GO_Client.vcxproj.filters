@@ -1,0 +1,1765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default Project Files">
+      <UniqueIdentifier>{dec7e72d-61af-4606-a733-0f97bd6f2796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default Project Files\Header Files">
+      <UniqueIdentifier>{8b0ab930-01c4-4ed6-938b-342e8869f2ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default Project Files\Header Files\Source Files">
+      <UniqueIdentifier>{e293c07f-0fcc-417d-b693-613d8bc48f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin">
+      <UniqueIdentifier>{a1197135-f35d-42e7-bb6a-8c6c4c05060b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\GameManager">
+      <UniqueIdentifier>{c60c3aae-a0eb-4aa9-a5cd-7ca986438da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oAniCtrl_Human">
+      <UniqueIdentifier>{8bc4483a-c387-4a37-bf1f-5c55b452ddf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oGame">
+      <UniqueIdentifier>{cd27dad3-58e2-46c9-b29b-5d4c6c48d37d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oItem">
+      <UniqueIdentifier>{8f25dc7e-44a7-4ab8-8b66-146dad4d5e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oNpc">
+      <UniqueIdentifier>{10446821-fea5-4e76-8db3-aaa34932f5f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oObjFactory">
+      <UniqueIdentifier>{3c6da61a-2f25-4f80-b3d3-44513737518f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oSpawnManager">
+      <UniqueIdentifier>{77aabe5c-9d2c-4140-b76f-7d16b27f0bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oSpell">
+      <UniqueIdentifier>{987b0700-9b5b-4104-a2e9-6b3b1775ad14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oView">
+      <UniqueIdentifier>{5bb575a2-6664-4bba-9125-13aa7089a3ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oVob">
+      <UniqueIdentifier>{74d2939f-5b70-4c4c-81eb-a5fc93526cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oWorldTimer">
+      <UniqueIdentifier>{95fb6e18-04c7-4413-b63b-fbfad67c3aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zAiPlayer">
+      <UniqueIdentifier>{5030c02b-8261-4c15-8d0e-91aa44efc207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zBspTree">
+      <UniqueIdentifier>{71b09a92-6bc6-4782-a8c6-c0fa77a5342f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zConsole">
+      <UniqueIdentifier>{0c43f71e-f99a-4099-9df0-ea0ef75c9d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zCamera">
+      <UniqueIdentifier>{d46c4d40-8d3d-4d03-a3bf-ee6729b01db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zInput">
+      <UniqueIdentifier>{b3da8fb1-6ee5-4cac-b390-a181bb69399e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zModel">
+      <UniqueIdentifier>{f0c37670-f7e4-4800-8cf1-c74787225dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zObject">
+      <UniqueIdentifier>{7fa69870-82e1-46c5-99fb-6841fe12f3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zOption">
+      <UniqueIdentifier>{079b0b54-c7f8-420c-b3f9-7878a8266c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zPar_Symbol">
+      <UniqueIdentifier>{cafe8f7e-00b1-4787-bfbb-d3533b58041a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zParser">
+      <UniqueIdentifier>{b33c37ac-de26-40d3-b26e-40a0509fb228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zRenderer">
+      <UniqueIdentifier>{7f64018f-12ff-498e-bfec-9c5fa8faf946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zSession">
+      <UniqueIdentifier>{c619dcca-1b93-465e-9f26-04c8f26a11cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zSkyController">
+      <UniqueIdentifier>{d4a690bb-956a-469b-8707-10d2bcf8da4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zSoundSystem">
+      <UniqueIdentifier>{364aaf86-3a0d-4f2e-9df0-5a4dd83e2199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zTimer">
+      <UniqueIdentifier>{9dd56b81-d7a3-405e-a5cc-6c6d82cb292c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zView">
+      <UniqueIdentifier>{882dd17c-d8ae-42a7-a867-3457bb32a844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zVisual">
+      <UniqueIdentifier>{9644f075-f691-4a77-8773-81b2693e17df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zWorld">
+      <UniqueIdentifier>{1f083088-3da1-4da9-8ffa-c666b35e2641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zFile">
+      <UniqueIdentifier>{92308e15-9128-4b48-9236-40be3a71209d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zTypes">
+      <UniqueIdentifier>{51afb670-f9d8-47d6-ab61-8d1e5f366a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zTypes\zSTRING">
+      <UniqueIdentifier>{c9c04f5c-f288-494a-b58d-9081388f73ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\oMob">
+      <UniqueIdentifier>{7c5b8a94-a61a-4f5c-932f-31a09fa8d152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\Hooks">
+      <UniqueIdentifier>{c1c2d115-6345-4089-b246-b22e3fdf8b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\zVob">
+      <UniqueIdentifier>{d6916b80-db10-4240-9dda-e5b09b35affa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\GameToggle">
+      <UniqueIdentifier>{569a126a-1b85-4bfa-9010-50acebb586b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZenGin\Mouse">
+      <UniqueIdentifier>{5acd4e8f-e0a2-4be5-b6a3-314167193424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{fb7fe11c-b154-4849-8cb9-f66df9e6a09b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\RakNet">
+      <UniqueIdentifier>{03e6967e-145b-4ff9-bbc2-654b4a92d87e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\goMath">
+      <UniqueIdentifier>{bd0b1fdc-3489-4ce5-883f-5bdefbeb0a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\TinyXML">
+      <UniqueIdentifier>{be0a860f-54f1-4ff2-84d8-fc2b9b4b9403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\List">
+      <UniqueIdentifier>{a3e92264-6cde-4d13-af67-8fb55cad2dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Network">
+      <UniqueIdentifier>{8be72cd4-42f5-49be-834b-b822f113a611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\HashLib++">
+      <UniqueIdentifier>{9d7a39fe-8daa-410f-a076-6061f1b3d3c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Utility">
+      <UniqueIdentifier>{022d7da7-0371-4cf2-805b-aa9b8091411a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel">
+      <UniqueIdentifier>{26716612-5bc1-42cf-a217-bf2355744de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\binmodule">
+      <UniqueIdentifier>{7d480c21-9cdd-4482-a0b2-c7d79f76bcfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\include">
+      <UniqueIdentifier>{fbb99e22-2dc4-4f96-8ee8-7f1921191b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\squirrel">
+      <UniqueIdentifier>{c7f4c4a0-1abf-4530-bb50-8db483140867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\sqstdlib">
+      <UniqueIdentifier>{9269d4b2-4024-4cfc-b3ad-0d1135923cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f7b399f6-d5ad-422c-beb9-63eb7f850036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\DevTools">
+      <UniqueIdentifier>{cb26c886-5422-45c1-af8d-dbbeb2931679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\DevTools\Log">
+      <UniqueIdentifier>{eb013268-dc86-4907-a8d7-b19a90c522f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Managers">
+      <UniqueIdentifier>{5edea741-eab6-4583-9542-ae3cfd245c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Local player">
+      <UniqueIdentifier>{aa9bf15b-7233-4f46-90e8-c7f427a6313d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\RPC">
+      <UniqueIdentifier>{7f16f82a-cab1-489a-9f3c-dc0014bc90a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Interface">
+      <UniqueIdentifier>{f5e06082-bee4-4176-a25d-8ffc743f918c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Objects">
+      <UniqueIdentifier>{7493164a-5f8c-46a5-8e73-e6343be57b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Objects\Item">
+      <UniqueIdentifier>{a67452db-ffd1-4370-aeb9-a18cf512abe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Objects\Creatures">
+      <UniqueIdentifier>{47205a5a-4c47-4709-80e3-4782555c95b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Objects\Vobs">
+      <UniqueIdentifier>{9e1a643a-c41b-4cb2-8808-dbe985dad1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Script">
+      <UniqueIdentifier>{10936b97-2d49-44d4-ba93-2351a5d73e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Keyboard">
+      <UniqueIdentifier>{7726ecd7-f2bf-49b7-ab9f-889f04793e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemLib">
+      <UniqueIdentifier>{933fe145-f429-43fd-aa8b-03ce46b6797d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Default Project Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default Project Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\constants.h">
+      <Filter>ZenGin</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\macros.h">
+      <Filter>ZenGin</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\ZenginIncludes.h">
+      <Filter>ZenGin</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\cgamemanager.h">
+      <Filter>ZenGin\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocanictrl_human.h">
+      <Filter>ZenGin\oAniCtrl_Human</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocgame.h">
+      <Filter>ZenGin\oGame</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocitem.h">
+      <Filter>ZenGin\oItem</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocnpc.h">
+      <Filter>ZenGin\oNpc</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocnpcinventory.h">
+      <Filter>ZenGin\oNpc</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocobjectfactory.h">
+      <Filter>ZenGin\oObjFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocspawnmanager.h">
+      <Filter>ZenGin\oSpawnManager</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocspell.h">
+      <Filter>ZenGin\oSpell</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocviewgothicprogressbar.h">
+      <Filter>ZenGin\oView</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocviewprogressbar.h">
+      <Filter>ZenGin\oView</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocviewstatusbar.h">
+      <Filter>ZenGin\oView</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocvob.h">
+      <Filter>ZenGin\oVob</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocworldtimer.h">
+      <Filter>ZenGin\oWorldTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcaiplayer.h">
+      <Filter>ZenGin\zAiPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcbsptree.h">
+      <Filter>ZenGin\zBspTree</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcconsole.h">
+      <Filter>ZenGin\zConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zccamera.h">
+      <Filter>ZenGin\zCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcinput.h">
+      <Filter>ZenGin\zInput</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcinputcallback.h">
+      <Filter>ZenGin\zInput</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcmodel.h">
+      <Filter>ZenGin\zModel</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcobject.h">
+      <Filter>ZenGin\zObject</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcoption.h">
+      <Filter>ZenGin\zOption</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcpar_symbol.h">
+      <Filter>ZenGin\zPar_Symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcparser.h">
+      <Filter>ZenGin\zParser</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcrenderer.h">
+      <Filter>ZenGin\zRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcsession.h">
+      <Filter>ZenGin\zSession</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcskycontroller.h">
+      <Filter>ZenGin\zSkyController</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcsoundsystem.h">
+      <Filter>ZenGin\zSoundSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zctimer.h">
+      <Filter>ZenGin\zTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcview.h">
+      <Filter>ZenGin\zView</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcvisual.h">
+      <Filter>ZenGin\zVisual</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcworld.h">
+      <Filter>ZenGin\zWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zFILE.h">
+      <Filter>ZenGin\zFile</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ztypes.h">
+      <Filter>ZenGin\zTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zstring.h">
+      <Filter>ZenGin\zTypes\zSTRING</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\ocmob.h">
+      <Filter>ZenGin\oMob</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcvob.h">
+      <Filter>ZenGin\zVob</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zgovob.h">
+      <Filter>ZenGin\zVob</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\gametoggle.h">
+      <Filter>ZenGin\GameToggle</Filter>
+    </ClInclude>
+    <ClInclude Include="zengin\api\g2\zcursor.h">
+      <Filter>ZenGin\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\GO_SharedIncludes.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RaknetIncludes.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\SquirrelIncludes.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\_FindFirst.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\AutopatcherPatchContext.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\AutopatcherRepositoryInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Base64Encoder.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\BitStream.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CCRakNetSlidingWindow.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CCRakNetUDT.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CheckSum.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CloudClient.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CloudCommon.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CloudServer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CommandParserInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ConnectionGraph2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ConsoleServer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DataCompressor.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DirectoryDeltaTransfer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DR_SHA1.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_BinarySearchTree.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_BPlusTree.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_BytePool.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_ByteQueue.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Hash.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Heap.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_HuffmanEncodingTree.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_HuffmanEncodingTreeFactory.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_HuffmanEncodingTreeNode.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_LinkedList.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_List.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Map.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_MemoryPool.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Multilist.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_OrderedChannelHeap.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_OrderedList.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Queue.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_QueueLinkedList.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_RangeList.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Table.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_ThreadsafeAllocatingQueue.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Tree.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_WeightedGraph.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DynDNS.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\EmailSender.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\EmptyHeader.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\EpochTimeToString.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Export.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileList.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileListNodeContext.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileListTransfer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileListTransferCBInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileOperations.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FormatString.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FullyConnectedMesh2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Getche.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Gets.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\GetTime.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\gettimeofday.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\GridSectorizer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\HTTPConnection.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\HTTPConnection2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\IncrementalReadInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\InternalPacket.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Itoa.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Kbhit.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\LinuxStrings.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\LocklessTypes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\LogCommandParser.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\MessageFilter.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\MessageIdentifiers.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\MTUSize.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NativeFeatureIncludes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NativeFeatureIncludesOverrides.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NativeTypes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatPunchthroughClient.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatPunchthroughServer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatTypeDetectionClient.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatTypeDetectionCommon.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatTypeDetectionServer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NetworkIDManager.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NetworkIDObject.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketConsoleLogger.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketFileLogger.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketizedTCP.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketLogger.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketOutputWindowLogger.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketPool.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketPriority.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PluginInterface2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PS3Includes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PS4Includes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Rackspace.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakAlloca.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakAssert.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakMemoryOverride.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetCommandParser.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetDefines.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetDefinesOverrides.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetSmartPtr.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetSocket.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetSocket2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetStatistics.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetTime.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetTransport2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetTypes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetVersion.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakPeer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakPeerInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakSleep.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakString.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakThread.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakWString.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Rand.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RandSync.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReadyEvent.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RefCountedObj.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RelayPlugin.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReliabilityLayer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReplicaEnums.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReplicaManager3.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Router2.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RPC4Plugin.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SecureHandshake.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SendToThread.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SignaledEvent.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SimpleMutex.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SimpleTCPServer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SingleProducerConsumer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SocketDefines.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SocketIncludes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SocketLayer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\StatisticsHistory.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\StringCompressor.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\StringTable.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SuperFastHash.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TableSerializer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TCPInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TeamBalancer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TeamManager.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TelnetTransport.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ThreadPool.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ThreadsafePacketLogger.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TransportInterface.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TwoWayAuthentication.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPForwarder.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyClient.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyCommon.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyCoordinator.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyServer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VariableDeltaSerializer.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VariableListDeltaTracker.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VariadicSQLParser.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VitaIncludes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\WindowsIncludes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\WSAStartupSingleton.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\XBox360Includes.h">
+      <Filter>Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\goMath\goMath.h">
+      <Filter>Shared\goMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\tinyxml\tinystr.h">
+      <Filter>Shared\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\tinyxml\tinyxml.h">
+      <Filter>Shared\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\List\List.h">
+      <Filter>Shared\List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Network\GOMessages.h">
+      <Filter>Shared\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hashlibpp.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_exception.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_hashwrapper.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_md5.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_md5wrapper.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha1.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha1wrapper.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha256.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha256wrapper.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha2ext.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha2mac.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha384wrapper.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha512wrapper.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_types.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_wrapperfactory.h">
+      <Filter>Shared\HashLib++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Utility\utility.h">
+      <Filter>Shared\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\sq_macro.h">
+      <Filter>Shared\Squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqimport.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqmodule.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqmodule_helpers.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqmodule_syms.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdaux.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdblob.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdio.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdmath.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdstring.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdsystem.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\squirrel.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqarray.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqclass.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqclosure.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqcompiler.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqfuncproto.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqfuncstate.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqlexer.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqobject.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqopcodes.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqpcheader.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqstate.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqstring.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqtable.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\squserdata.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\squtils.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqvm.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\sqstdlib\sqstdblobimpl.h">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\sqstdlib\sqstdstream.h">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CChat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CClient.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CGothicGame.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CGothicWindow.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CMultiplayer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CNetwork.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CReceiver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CRender.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpell.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CSplashScreen.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Log\CLog.h">
+      <Filter>Core\DevTools\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CVobManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CLocalPlayer.h">
+      <Filter>Core\Local player</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC\ChatRPC.h">
+      <Filter>Core\RPC</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC\ConnectionRPC.h">
+      <Filter>Core\RPC</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC\ItemRPC.h">
+      <Filter>Core\RPC</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC\PlayerRPC.h">
+      <Filter>Core\RPC</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC\ScriptRPC.h">
+      <Filter>Core\RPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CNetInterface.h">
+      <Filter>Core\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\COptionsMenu.h">
+      <Filter>Core\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CPlayerList.h">
+      <Filter>Core\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem.h">
+      <Filter>Core\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreature.h">
+      <Filter>Core\Objects\Creatures</Filter>
+    </ClInclude>
+    <ClInclude Include="CNpc.h">
+      <Filter>Core\Objects\Creatures</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Core\Objects\Creatures</Filter>
+    </ClInclude>
+    <ClInclude Include="CVob.h">
+      <Filter>Core\Objects\Vobs</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\CScript.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SAnticheat.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SCallback.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SDraw.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SFunction.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SKey.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SScript.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\STexture.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\STimer.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SVariable.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CKeyboard.h">
+      <Filter>Core\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\ru_layout.h">
+      <Filter>Core\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="MemLib\MemLib.h">
+      <Filter>MemLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Default Project Files\Header Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Default Project Files\Header Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\ocgame.cpp">
+      <Filter>ZenGin\oGame</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCNpc.cpp">
+      <Filter>ZenGin\oNpc</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\ocobjectfactory.cpp">
+      <Filter>ZenGin\oObjFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zcinput.cpp">
+      <Filter>ZenGin\zInput</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zcview.cpp">
+      <Filter>ZenGin\zView</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCMob.cpp">
+      <Filter>ZenGin\oMob</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\CGameManager_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCGame_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCMag_Book_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCNpc_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCObjectFactory_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\oCSpawnManager_Hook.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zCModel_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zCOption_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zCView_Hooks.cpp">
+      <Filter>ZenGin\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zcvob.cpp">
+      <Filter>ZenGin\zVob</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\gametoggle.cpp">
+      <Filter>ZenGin\GameToggle</Filter>
+    </ClCompile>
+    <ClCompile Include="zengin\api\g2\zcursor.cpp">
+      <Filter>ZenGin\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\_FindFirst.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Base64Encoder.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\BitStream.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CCRakNetSlidingWindow.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CCRakNetUDT.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CheckSum.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CloudClient.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CloudCommon.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CloudServer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\CommandParserInterface.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\ConnectionGraph2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\ConsoleServer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DataCompressor.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DirectoryDeltaTransfer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DR_SHA1.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DS_BytePool.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DS_ByteQueue.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DS_HuffmanEncodingTree.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DS_Table.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\DynDNS.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\EmailSender.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\EpochTimeToString.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\FileList.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\FileListTransfer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\FileOperations.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\FormatString.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\FullyConnectedMesh2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Getche.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Gets.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\GetTime.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\gettimeofday.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\GridSectorizer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\HTTPConnection.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\HTTPConnection2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\IncrementalReadInterface.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Itoa.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\LinuxStrings.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\LocklessTypes.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\LogCommandParser.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\MessageFilter.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NatPunchthroughClient.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NatPunchthroughServer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NatTypeDetectionClient.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NatTypeDetectionCommon.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NatTypeDetectionServer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NetworkIDManager.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\NetworkIDObject.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PacketConsoleLogger.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PacketFileLogger.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PacketizedTCP.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PacketLogger.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PacketOutputWindowLogger.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PluginInterface2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\PS4Includes.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Rackspace.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakMemoryOverride.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetCommandParser.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_360_720.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_Berkley.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_Berkley_NativeClient.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_NativeClient.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_PS3_PS4.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_PS4.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_Vita.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_Windows_Linux.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_Windows_Linux_360.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetSocket2_WindowsStore8.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetStatistics.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetTransport2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakNetTypes.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakPeer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakSleep.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakString.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakThread.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RakWString.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Rand.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RandSync.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\ReadyEvent.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RelayPlugin.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\ReliabilityLayer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\ReplicaManager3.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\Router2.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\RPC4Plugin.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\SecureHandshake.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\SendToThread.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\SignaledEvent.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\SimpleMutex.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\SocketLayer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\StatisticsHistory.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\StringCompressor.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\StringTable.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\SuperFastHash.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\TableSerializer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\TCPInterface.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\TeamBalancer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\TeamManager.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\TelnetTransport.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\ThreadsafePacketLogger.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\TwoWayAuthentication.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\UDPForwarder.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\UDPProxyClient.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\UDPProxyCoordinator.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\UDPProxyServer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\VariableDeltaSerializer.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\VariableListDeltaTracker.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\VariadicSQLParser.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\VitaIncludes.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\RakNet\WSAStartupSingleton.cpp">
+      <Filter>Shared\RakNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\goMath\goMath.cpp">
+      <Filter>Shared\goMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\tinyxml\tinystr.cpp">
+      <Filter>Shared\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\tinyxml\tinyxml.cpp">
+      <Filter>Shared\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\tinyxml\tinyxmlerror.cpp">
+      <Filter>Shared\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\tinyxml\tinyxmlparser.cpp">
+      <Filter>Shared\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_md5.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_md5wrapper.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha1.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha1wrapper.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha256.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha256wrapper.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha2ext.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha384wrapper.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha512wrapper.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_wrapperfactory.cpp">
+      <Filter>Shared\HashLib++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Utility\utility.cpp">
+      <Filter>Shared\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\binmodule\sqimport.cpp">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqapi.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqbaselib.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqclass.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqcompiler.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqdebug.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqfuncstate.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqlexer.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqmem.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqobject.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqstate.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqtable.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqvm.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdaux.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdblob.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdio.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdmath.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdrex.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdstream.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdstring.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdsystem.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CChat.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CConfig.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CGothicGame.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CGothicWindow.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CMultiplayer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CNetwork.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CReceiver.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CRender.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CSpell.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CSplashScreen.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\CLog.cpp">
+      <Filter>Core\DevTools\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="CVobManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="CLocalPlayer.cpp">
+      <Filter>Core\Local player</Filter>
+    </ClCompile>
+    <ClCompile Include="RPC\ChatRPC.cpp">
+      <Filter>Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="RPC\ConnectionRPC.cpp">
+      <Filter>Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="RPC\ItemRPC.cpp">
+      <Filter>Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="RPC\PlayerRPC.cpp">
+      <Filter>Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="RPC\ScriptRPC.cpp">
+      <Filter>Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CNetInterface.cpp">
+      <Filter>Core\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\COptionsMenu.cpp">
+      <Filter>Core\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CPlayerList.cpp">
+      <Filter>Core\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="CItem.cpp">
+      <Filter>Core\Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreature.cpp">
+      <Filter>Core\Objects\Creatures</Filter>
+    </ClCompile>
+    <ClCompile Include="CNpc.cpp">
+      <Filter>Core\Objects\Creatures</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Core\Objects\Creatures</Filter>
+    </ClCompile>
+    <ClCompile Include="CVob.cpp">
+      <Filter>Core\Objects\Vobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\CScript.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SAnticheat.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SCallback.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SDraw.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SFunction.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SKey.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SScript.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\STexture.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\STimer.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SVaraiable.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CKeyboard.cpp">
+      <Filter>Core\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="MemLib\MemLib.cpp">
+      <Filter>MemLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zengin\api\g2\ztypes.inl">
+      <Filter>ZenGin\zTypes</Filter>
+    </None>
+    <None Include="..\Shared\RakNet\RakNet.vcproj">
+      <Filter>Shared\RakNet</Filter>
+    </None>
+    <None Include="..\Shared\RakNet\RakNet_vc8.vcproj">
+      <Filter>Shared\RakNet</Filter>
+    </None>
+    <None Include="..\Shared\RakNet\RakNet_vc9.vcproj">
+      <Filter>Shared\RakNet</Filter>
+    </None>
+    <None Include="..\Shared\Squirrel\squirrel\Makefile">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </None>
+    <None Include="..\Shared\Squirrel\squirrel\squirrel.dsp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </None>
+    <None Include="..\Shared\Squirrel\sqstdlib\Makefile">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </None>
+    <None Include="..\Shared\Squirrel\sqstdlib\sqstdlib.dsp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Shared\RakNet\CMakeLists.txt">
+      <Filter>Shared\RakNet</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+</Project>

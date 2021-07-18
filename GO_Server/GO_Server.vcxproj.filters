@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Default Project Files">
-      <UniqueIdentifier>{ae33b030-0b42-4e7f-924f-7c4f06a643da}</UniqueIdentifier>
+      <UniqueIdentifier>{7736519b-a89d-43a7-ab25-513460ae21be}</UniqueIdentifier>
     </Filter>
     <Filter Include="Default Project Files\Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
@@ -13,58 +13,70 @@
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Core">
-      <UniqueIdentifier>{28948779-3fc7-4b70-9528-cedb2ee1543a}</UniqueIdentifier>
+      <UniqueIdentifier>{a868210f-1653-4de2-84bc-828a0d0b5691}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Managers">
-      <UniqueIdentifier>{ea0b061d-db11-4c20-9776-fb5a4bf1e95a}</UniqueIdentifier>
+      <UniqueIdentifier>{18d163a3-a5b8-4402-a36f-a3cc6271ded2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\RPC">
-      <UniqueIdentifier>{99ab0e25-901a-4080-8430-86b65aa36aff}</UniqueIdentifier>
+      <UniqueIdentifier>{251b92ac-f0d4-4635-8693-deb7d9ba943f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Log">
-      <UniqueIdentifier>{5b2fa41f-3ab6-47a2-9732-049c78c20cb1}</UniqueIdentifier>
+      <UniqueIdentifier>{a0fa09e0-cd7e-4422-a172-d6d7732bf291}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects">
-      <UniqueIdentifier>{ac224393-7513-403e-b743-d23588880d30}</UniqueIdentifier>
+      <UniqueIdentifier>{9f911e55-0eff-4d2d-aef4-bd9dbf06ab47}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects\Creatures">
-      <UniqueIdentifier>{ba3301d0-7e70-402d-87da-ba4cbce2c841}</UniqueIdentifier>
+      <UniqueIdentifier>{6f27277b-d81a-4c32-a884-d0b82a126c57}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects\Item">
-      <UniqueIdentifier>{3c646221-4104-4a4c-9fab-5c9ec29149fd}</UniqueIdentifier>
+      <UniqueIdentifier>{ccfa8076-852c-492a-947d-47b75e23ba84}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Script">
-      <UniqueIdentifier>{f7e61cea-2e45-4774-9b79-1ca5dea78375}</UniqueIdentifier>
+      <UniqueIdentifier>{43ea3a78-40af-4868-ab9b-3e87e7e6b457}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared">
-      <UniqueIdentifier>{3bb53941-518f-4b4a-bfd1-ea261d545fa8}</UniqueIdentifier>
+      <UniqueIdentifier>{2fe2ccbb-456d-4098-9b49-9088a8d299ca}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\RakNet">
-      <UniqueIdentifier>{b9879998-4127-4041-afd2-fc93585d30e3}</UniqueIdentifier>
+      <UniqueIdentifier>{9ec891b1-ba06-457f-a0ef-4389be260531}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\List">
-      <UniqueIdentifier>{67b221f7-a4e7-4e61-ab99-2329a68ffd8c}</UniqueIdentifier>
+      <UniqueIdentifier>{8683c728-946b-4b95-a9dc-9bb950907695}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\goMath">
-      <UniqueIdentifier>{1aecdfdd-0fa0-47b2-8da4-5e41db433f08}</UniqueIdentifier>
+      <UniqueIdentifier>{5144329a-d638-44e0-ba0e-6fc6515b7d0f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\TinyXML">
-      <UniqueIdentifier>{ed55b526-a883-43cf-bde9-83f07b060550}</UniqueIdentifier>
+      <UniqueIdentifier>{19f3eeed-98af-4f1e-b140-9f596bc2db15}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Network">
-      <UniqueIdentifier>{cf7c7fb4-f940-4127-8d0a-b00c0047d097}</UniqueIdentifier>
+      <UniqueIdentifier>{452b582e-75cb-4a44-94d8-a56b43a55e5f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\TinyThread++">
-      <UniqueIdentifier>{e39bcd26-4fb7-4e27-9d6d-51b60968a680}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shared\GameMonkey">
-      <UniqueIdentifier>{6a0662a9-3ac3-4be0-b5de-31414329bfdf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shared\GameMonkey\SQLite">
-      <UniqueIdentifier>{45b75198-82fb-41ee-866f-a0c43b31e521}</UniqueIdentifier>
+      <UniqueIdentifier>{04556727-1fbe-4e10-a14d-3882136d05ac}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Utility">
-      <UniqueIdentifier>{16039df2-7456-465e-9fd3-9f015e873472}</UniqueIdentifier>
+      <UniqueIdentifier>{c3deb2b2-80f0-49ea-a8b0-b3c2fa9eb4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel">
+      <UniqueIdentifier>{7c8a660e-c096-4909-b905-62785e74bc07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\binmodule">
+      <UniqueIdentifier>{b6eb2641-0749-4ce4-af94-3dc8c845e822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\include">
+      <UniqueIdentifier>{1d9858ed-230d-45f5-85de-1885984be8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\sqstdlib">
+      <UniqueIdentifier>{3b7c9787-a46c-4bb0-b15b-f80ef2134f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Squirrel\squirrel">
+      <UniqueIdentifier>{76b0bff9-182a-4e39-9775-4fc1f1fd273b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\hashlib">
+      <UniqueIdentifier>{fe969312-4d2b-4f6f-a41c-1ddf48583227}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +118,9 @@
     </ClCompile>
     <ClCompile Include="CStreamer.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CBotManager.cpp">
+      <Filter>Core\Managers</Filter>
     </ClCompile>
     <ClCompile Include="CItemManager.cpp">
       <Filter>Core\Managers</Filter>
@@ -153,6 +168,12 @@
       <Filter>Core\Script</Filter>
     </ClCompile>
     <ClCompile Include="Script\SFunction.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\STimer.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\SVaraiable.cpp">
       <Filter>Core\Script</Filter>
     </ClCompile>
     <ClCompile Include="..\Shared\RakNet\_FindFirst.cpp">
@@ -503,131 +524,101 @@
     <ClCompile Include="..\Shared\TinyThread\tinythread.cpp">
       <Filter>Shared\TinyThread++</Filter>
     </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmArrayLib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmArraySimple.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmByteCode.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmByteCodeGen.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmCall.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmCodeGen.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmCodeGenHooks.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmCodeTree.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmCrc.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmFunctionObject.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmGCRoot.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmGCRootUtil.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmHash.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmHelpers.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmIncGC.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmLibHooks.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmListDouble.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmLog.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMachine.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMachineLib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMathLib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMem.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMemChain.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMemFixed.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmMemFixedSet.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmOperators.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmParser.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmScanner.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmSqliteLib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmStream.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmStreamBuffer.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmStringLib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmStringObject.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmSystemLib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmTableObject.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmThread.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmUserObject.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmUtil.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmVariable.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\gmVector3Lib.cpp">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Shared\GameMonkey\sqlite\sqlite3.c">
-      <Filter>Shared\GameMonkey\SQLite</Filter>
-    </ClCompile>
     <ClCompile Include="..\Shared\Utility\utility.cpp">
       <Filter>Shared\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\binmodule\sqimport.cpp">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdaux.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdblob.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdio.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdmath.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdrex.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdstream.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdstring.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\sqstdlib\sqstdsystem.cpp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqapi.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqbaselib.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqclass.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqcompiler.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqdebug.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqfuncstate.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqlexer.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqmem.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqobject.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqstate.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqtable.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\Squirrel\squirrel\sqvm.cpp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_md5.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_md5wrapper.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha1.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha1wrapper.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha256.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha256wrapper.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha2ext.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha384wrapper.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_sha512wrapper.cpp">
+      <Filter>Shared\hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hashlib\hl_wrapperfactory.cpp">
+      <Filter>Shared\hashlib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -666,6 +657,9 @@
     </ClInclude>
     <ClInclude Include="CStreamer.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CBotManager.h">
+      <Filter>Core\Managers</Filter>
     </ClInclude>
     <ClInclude Include="CItemManager.h">
       <Filter>Core\Managers</Filter>
@@ -715,10 +709,19 @@
     <ClInclude Include="Script\SFunction.h">
       <Filter>Core\Script</Filter>
     </ClInclude>
+    <ClInclude Include="Script\STimer.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\SVariable.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
     <ClInclude Include="..\Shared\GO_SharedIncludes.h">
       <Filter>Shared</Filter>
     </ClInclude>
     <ClInclude Include="..\Shared\RaknetIncludes.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\SquirrelIncludes.h">
       <Filter>Shared</Filter>
     </ClInclude>
     <ClInclude Include="..\Shared\RakNet\_FindFirst.h">
@@ -1204,143 +1207,143 @@
     <ClInclude Include="..\Shared\TinyThread\tinythread.h">
       <Filter>Shared\TinyThread++</Filter>
     </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmArrayLib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmArraySimple.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmByteCode.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmByteCodeGen.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmCall.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmCodeGen.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmCodeGenHooks.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmCodeTree.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmConfig.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmConfig_p.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmCrc.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmFunctionObject.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmGCRoot.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmGCRootUtil.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmHash.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmHelpers.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmIncGC.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmIterator.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmLibHooks.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmListDouble.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmLog.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMachine.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMachineLib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMathLib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMem.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMemChain.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMemFixed.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmMemFixedSet.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmOperators.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmParser.cpp.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmScanner.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmSqliteLib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmStream.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmStreamBuffer.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmStringLib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmStringObject.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmSystemLib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmTableObject.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmThread.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmUserObject.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmUtil.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmVariable.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\gmVector3Lib.h">
-      <Filter>Shared\GameMonkey</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\sqlite\sqlite3.h">
-      <Filter>Shared\GameMonkey\SQLite</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Shared\GameMonkey\sqlite\sqlite3ext.h">
-      <Filter>Shared\GameMonkey\SQLite</Filter>
-    </ClInclude>
     <ClInclude Include="..\Shared\Utility\utility.h">
       <Filter>Shared\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\sq_macro.h">
+      <Filter>Shared\Squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqimport.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqmodule.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqmodule_helpers.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\binmodule\sqmodule_syms.h">
+      <Filter>Shared\Squirrel\binmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdaux.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdblob.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdio.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdmath.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdstring.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\sqstdsystem.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\include\squirrel.h">
+      <Filter>Shared\Squirrel\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\sqstdlib\sqstdblobimpl.h">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\sqstdlib\sqstdstream.h">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqarray.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqclass.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqclosure.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqcompiler.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqfuncproto.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqfuncstate.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqlexer.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqobject.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqopcodes.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqpcheader.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqstate.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqstring.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqtable.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\squserdata.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\squtils.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Squirrel\squirrel\sqvm.h">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hashlibpp.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_exception.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_hashwrapper.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_md5.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_md5wrapper.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha1.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha1wrapper.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha256.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha256wrapper.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha2ext.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha2mac.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha384wrapper.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_sha512wrapper.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_types.h">
+      <Filter>Shared\hashlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hashlib\hl_wrapperfactory.h">
+      <Filter>Shared\hashlib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1358,14 +1361,20 @@
     <None Include="..\Shared\RakNet\RakNet_vc9.vcproj">
       <Filter>Shared\RakNet</Filter>
     </None>
-    <None Include="..\Shared\GameMonkey\gmfrontend.bat">
-      <Filter>Shared\GameMonkey</Filter>
+    <None Include="..\Shared\Squirrel\sqstdlib\Makefile">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
     </None>
-    <None Include="..\Shared\GameMonkey\gmParser.y">
-      <Filter>Shared\GameMonkey</Filter>
+    <None Include="..\Shared\Squirrel\sqstdlib\sqstdlib.dsp">
+      <Filter>Shared\Squirrel\sqstdlib</Filter>
     </None>
-    <None Include="..\Shared\GameMonkey\gmScanner.l">
-      <Filter>Shared\GameMonkey</Filter>
+    <None Include="..\Shared\Squirrel\squirrel\Makefile">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </None>
+    <None Include="..\Shared\Squirrel\squirrel\squirrel.dsp">
+      <Filter>Shared\Squirrel\squirrel</Filter>
+    </None>
+    <None Include="..\Shared\hashlib\Makefile#7CC2">
+      <Filter>Shared\hashlib</Filter>
     </None>
   </ItemGroup>
 </Project>
