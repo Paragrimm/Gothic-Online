@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'CFavorite.ui'
 **
-** Created by: Qt User Interface Compiler version 5.4.0
+** Created by: Qt User Interface Compiler version 5.12.11
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,8 @@
 #define UI_CFAVORITE_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -34,27 +31,27 @@ public:
     void setupUi(QWidget *CFavorite)
     {
         if (CFavorite->objectName().isEmpty())
-            CFavorite->setObjectName(QStringLiteral("CFavorite"));
+            CFavorite->setObjectName(QString::fromUtf8("CFavorite"));
         CFavorite->resize(240, 86);
         gridLayoutWidget = new QWidget(CFavorite);
-        gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
+        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
         gridLayoutWidget->setGeometry(QRect(9, 29, 221, 51));
         gridLayout = new QGridLayout(gridLayoutWidget);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
         labelIP = new QLabel(gridLayoutWidget);
-        labelIP->setObjectName(QStringLiteral("labelIP"));
+        labelIP->setObjectName(QString::fromUtf8("labelIP"));
 
         gridLayout->addWidget(labelIP, 0, 0, 1, 1);
 
         editIP = new QLineEdit(gridLayoutWidget);
-        editIP->setObjectName(QStringLiteral("editIP"));
+        editIP->setObjectName(QString::fromUtf8("editIP"));
         editIP->setMaxLength(80);
 
         gridLayout->addWidget(editIP, 0, 1, 1, 1);
 
         buttonOk = new QPushButton(gridLayoutWidget);
-        buttonOk->setObjectName(QStringLiteral("buttonOk"));
+        buttonOk->setObjectName(QString::fromUtf8("buttonOk"));
 
         gridLayout->addWidget(buttonOk, 1, 0, 1, 2);
 
@@ -66,9 +63,9 @@ public:
 
     void retranslateUi(QWidget *CFavorite)
     {
-        CFavorite->setWindowTitle(QApplication::translate("CFavorite", "Form", 0));
-        labelIP->setText(QApplication::translate("CFavorite", "IP:Port", 0));
-        buttonOk->setText(QApplication::translate("CFavorite", "Action", 0));
+        CFavorite->setWindowTitle(QApplication::translate("CFavorite", "Form", nullptr));
+        labelIP->setText(QApplication::translate("CFavorite", "IP:Port", nullptr));
+        buttonOk->setText(QApplication::translate("CFavorite", "Action", nullptr));
     } // retranslateUi
 
 };

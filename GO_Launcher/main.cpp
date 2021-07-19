@@ -8,7 +8,9 @@ int main(int argc, char *argv[]) try
 {
     QApplication app(argc, argv);
 
-    LAUNCHER.init();
+    SLauncher* launcher = &SLauncher::getInstance();
+    launcher->initManagers();
+    launcher->init();
 
     return app.exec();
 }

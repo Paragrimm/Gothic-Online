@@ -99,7 +99,8 @@ void CFavoriteManager::loadFavoriteList()
             }
 
             // Append data to Vector
-            LAUNCHER.getServerFavoriteManager()->addServer(CServerInfo(ipAdress, port));
+            CServerInfo serverInfo(ipAdress, port);
+            LAUNCHER.getServerFavoriteManager()->addServer(serverInfo);
             m_ListFavorite.append(FavoriteServer(ipAdress, port));
         }
 
@@ -110,7 +111,8 @@ void CFavoriteManager::loadFavoriteList()
 void CFavoriteManager::serverList()
 {
     LAUNCHER.getServerFavoriteManager()->refreshList(true);
-    LAUNCHER.getNetwork().sendRequest(LAUNCHER.getServerFavoriteManager()->getServerList(), INDEX_FAVORITE);
+    auto serverList = LAUNCHER.getServerFavoriteManager()->getServerList();
+    LAUNCHER.getNetwork().sendRequest(serverList, INDEX_FAVORITE);
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------
@@ -157,19 +159,20 @@ void CFavoriteManager::onButtonRemoveClicked()
 
 void CFavoriteManager::onFavoriteAdd(QString host, QString port)
 {
-    LAUNCHER.getServerFavoriteManager()->addServer(CServerInfo(host, port));
+    CServerInfo serverInfo(host, port);
+    LAUNCHER.getServerFavoriteManager()->addServer(serverInfo);
 
     if (!m_ListFavorite.contains(FavoriteServer(host, port))) m_ListFavorite.append(FavoriteServer(host, port));
 }
 
 void CFavoriteManager::onFavoriteEdit(QString host, QString port)
 {
-    int index = m_ListFavorite.indexOf(FavoriteServer(m_TempEdit->text(1), m_TempEdit->text(2)));
-    if (index != -1)
-    {
-        m_ListFavorite[index].m_IP = host;
-        m_ListFavorite[index].m_Port = port;
-    }
+//    int index = m_ListFavorite.indexOf(FavoriteServer(m_TempEdit->text(1), m_TempEdit->text(2)));
+//    if (index != -1)
+//    {
+//        m_ListFavorite[index].m_IP = host;
+//        m_ListFavorite[index].m_Port = port;
+//    }
 
-    LAUNCHER.getServerFavoriteManager()->editServer(m_TempEdit->text(1), m_TempEdit->text(2), host, port);
+//    LAUNCHER.getServerFavoriteManager()->editServer(m_TempEdit->text(1), m_TempEdit->text(2), host, port);
 }

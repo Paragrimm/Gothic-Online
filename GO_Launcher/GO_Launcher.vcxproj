@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CA553C4-9240-3A6D-B87A-44FE5AF04CB0}</ProjectGuid>
+    <RootNamespace>GO_Launcher</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.19041.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>GO_Launcher</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>GO_Launcher</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>debug\</OutDir>
+    <IntDir>debug\</IntDir>
+    <TargetName>GO_Launcher</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>release\</OutDir>
+    <IntDir>release\</IntDir>
+    <TargetName>GO_Launcher</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>5.12.11</QtInstall>
+    <QtModules>core;network;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>5.12.11</QtInstall>
+    <QtModules>core;network;gui;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;RakNet;release;C:\VulkanSDK\1.2.170.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_ATL_XP_TARGETING;D_ATL_XP_TARGETING;NOMINMAX;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\GO_Launcher.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_ATL_XP_TARGETING;D_ATL_XP_TARGETING;NOMINMAX;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>resource</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;RakNet;debug;C:\VulkanSDK\1.2.170.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_ATL_XP_TARGETING;D_ATL_XP_TARGETING;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\GO_Launcher.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;_ATL_XP_TARGETING;D_ATL_XP_TARGETING;NOMINMAX;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>resource</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="RakNet\Base64Encoder.cpp" />
+    <ClCompile Include="RakNet\BitStream.cpp" />
+    <ClCompile Include="CAddons.cpp" />
+    <ClCompile Include="RakNet\CCRakNetSlidingWindow.cpp" />
+    <ClCompile Include="RakNet\CCRakNetUDT.cpp" />
+    <ClCompile Include="Style\CCustomWindow.cpp" />
+    <ClCompile Include="CDownloader.cpp" />
+    <ClCompile Include="CFavorite.cpp" />
+    <ClCompile Include="CFavoriteManager.cpp" />
+    <ClCompile Include="CFileTransferCallback.cpp" />
+    <ClCompile Include="CInject.cpp" />
+    <ClCompile Include="CInternetManager.cpp" />
+    <ClCompile Include="CLanguage.cpp" />
+    <ClCompile Include="CMasterServerList.cpp" />
+    <ClCompile Include="CMessageBox.cpp" />
+    <ClCompile Include="CNetwork.cpp" />
+    <ClCompile Include="CNetworkThread.cpp" />
+    <ClCompile Include="COptions.cpp" />
+    <ClCompile Include="RPC\CRPCDownloader.cpp" />
+    <ClCompile Include="RPC\CRPCFavorite.cpp" />
+    <ClCompile Include="RPC\CRPCInternet.cpp" />
+    <ClCompile Include="CServerInfo.cpp" />
+    <ClCompile Include="CServerManager.cpp" />
+    <ClCompile Include="CSettings.cpp" />
+    <ClCompile Include="CUrlDownloader.cpp" />
+    <ClCompile Include="CVersion.cpp" />
+    <ClCompile Include="Style\CWindowButton.cpp" />
+    <ClCompile Include="Style\CWindowTitleBar.cpp" />
+    <ClCompile Include="RakNet\CheckSum.cpp" />
+    <ClCompile Include="RakNet\CloudClient.cpp" />
+    <ClCompile Include="RakNet\CloudCommon.cpp" />
+    <ClCompile Include="RakNet\CloudServer.cpp" />
+    <ClCompile Include="RakNet\CommandParserInterface.cpp" />
+    <ClCompile Include="RakNet\ConnectionGraph2.cpp" />
+    <ClCompile Include="RakNet\ConsoleServer.cpp" />
+    <ClCompile Include="RakNet\DR_SHA1.cpp" />
+    <ClCompile Include="RakNet\DS_BytePool.cpp" />
+    <ClCompile Include="RakNet\DS_ByteQueue.cpp" />
+    <ClCompile Include="RakNet\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="RakNet\DS_Table.cpp" />
+    <ClCompile Include="RakNet\DataCompressor.cpp" />
+    <ClCompile Include="RakNet\DirectoryDeltaTransfer.cpp" />
+    <ClCompile Include="RakNet\DynDNS.cpp" />
+    <ClCompile Include="RakNet\EmailSender.cpp" />
+    <ClCompile Include="RakNet\EpochTimeToString.cpp" />
+    <ClCompile Include="RakNet\FileList.cpp" />
+    <ClCompile Include="RakNet\FileListTransfer.cpp" />
+    <ClCompile Include="RakNet\FileOperations.cpp" />
+    <ClCompile Include="RakNet\FormatString.cpp" />
+    <ClCompile Include="RakNet\FullyConnectedMesh2.cpp" />
+    <ClCompile Include="RakNet\GetTime.cpp" />
+    <ClCompile Include="RakNet\Getche.cpp" />
+    <ClCompile Include="RakNet\Gets.cpp" />
+    <ClCompile Include="RakNet\GridSectorizer.cpp" />
+    <ClCompile Include="RakNet\HTTPConnection.cpp" />
+    <ClCompile Include="RakNet\HTTPConnection2.cpp" />
+    <ClCompile Include="RakNet\IncrementalReadInterface.cpp" />
+    <ClCompile Include="RakNet\Itoa.cpp" />
+    <ClCompile Include="RakNet\LinuxStrings.cpp" />
+    <ClCompile Include="RakNet\LocklessTypes.cpp" />
+    <ClCompile Include="RakNet\LogCommandParser.cpp" />
+    <ClCompile Include="RakNet\MessageFilter.cpp" />
+    <ClCompile Include="RakNet\NatPunchthroughClient.cpp" />
+    <ClCompile Include="RakNet\NatPunchthroughServer.cpp" />
+    <ClCompile Include="RakNet\NatTypeDetectionClient.cpp" />
+    <ClCompile Include="RakNet\NatTypeDetectionCommon.cpp" />
+    <ClCompile Include="RakNet\NatTypeDetectionServer.cpp" />
+    <ClCompile Include="RakNet\NetworkIDManager.cpp" />
+    <ClCompile Include="RakNet\NetworkIDObject.cpp" />
+    <ClCompile Include="RakNet\PS4Includes.cpp" />
+    <ClCompile Include="RakNet\PacketConsoleLogger.cpp" />
+    <ClCompile Include="RakNet\PacketFileLogger.cpp" />
+    <ClCompile Include="RakNet\PacketLogger.cpp" />
+    <ClCompile Include="RakNet\PacketOutputWindowLogger.cpp" />
+    <ClCompile Include="RakNet\PacketizedTCP.cpp" />
+    <ClCompile Include="RakNet\PluginInterface2.cpp" />
+    <ClCompile Include="RakNet\RPC4Plugin.cpp" />
+    <ClCompile Include="RakNet\Rackspace.cpp" />
+    <ClCompile Include="RakNet\RakMemoryOverride.cpp" />
+    <ClCompile Include="RakNet\RakNetCommandParser.cpp" />
+    <ClCompile Include="RakNet\RakNetSocket.cpp" />
+    <ClCompile Include="RakNet\RakNetSocket2.cpp" />
+    <ClCompile Include="RakNet\RakNetStatistics.cpp" />
+    <ClCompile Include="RakNet\RakNetTransport2.cpp" />
+    <ClCompile Include="RakNet\RakNetTypes.cpp" />
+    <ClCompile Include="RakNet\RakPeer.cpp" />
+    <ClCompile Include="RakNet\RakSleep.cpp" />
+    <ClCompile Include="RakNet\RakString.cpp" />
+    <ClCompile Include="RakNet\RakThread.cpp" />
+    <ClCompile Include="RakNet\RakWString.cpp" />
+    <ClCompile Include="RakNet\Rand.cpp" />
+    <ClCompile Include="RakNet\RandSync.cpp" />
+    <ClCompile Include="RakNet\ReadyEvent.cpp" />
+    <ClCompile Include="RakNet\RelayPlugin.cpp" />
+    <ClCompile Include="RakNet\ReliabilityLayer.cpp" />
+    <ClCompile Include="RakNet\ReplicaManager3.cpp" />
+    <ClCompile Include="RakNet\Router2.cpp" />
+    <ClCompile Include="SLauncher.cpp" />
+    <ClCompile Include="SLog.cpp" />
+    <ClCompile Include="RakNet\SecureHandshake.cpp" />
+    <ClCompile Include="RakNet\SendToThread.cpp" />
+    <ClCompile Include="RakNet\SignaledEvent.cpp" />
+    <ClCompile Include="RakNet\SimpleMutex.cpp" />
+    <ClCompile Include="RakNet\SocketLayer.cpp" />
+    <ClCompile Include="RakNet\StatisticsHistory.cpp" />
+    <ClCompile Include="RakNet\StringCompressor.cpp" />
+    <ClCompile Include="RakNet\StringTable.cpp" />
+    <ClCompile Include="RakNet\SuperFastHash.cpp" />
+    <ClCompile Include="RakNet\TCPInterface.cpp" />
+    <ClCompile Include="RakNet\TableSerializer.cpp" />
+    <ClCompile Include="RakNet\TeamBalancer.cpp" />
+    <ClCompile Include="RakNet\TeamManager.cpp" />
+    <ClCompile Include="RakNet\TelnetTransport.cpp" />
+    <ClCompile Include="RakNet\ThreadsafePacketLogger.cpp" />
+    <ClCompile Include="RakNet\TwoWayAuthentication.cpp" />
+    <ClCompile Include="RakNet\UDPForwarder.cpp" />
+    <ClCompile Include="RakNet\UDPProxyClient.cpp" />
+    <ClCompile Include="RakNet\UDPProxyCoordinator.cpp" />
+    <ClCompile Include="RakNet\UDPProxyServer.cpp" />
+    <ClCompile Include="RakNet\VariableDeltaSerializer.cpp" />
+    <ClCompile Include="RakNet\VariableListDeltaTracker.cpp" />
+    <ClCompile Include="RakNet\VariadicSQLParser.cpp" />
+    <ClCompile Include="RakNet\VitaIncludes.cpp" />
+    <ClCompile Include="RakNet\WSAStartupSingleton.cpp" />
+    <ClCompile Include="RakNet\_FindFirst.cpp" />
+    <ClCompile Include="RakNet\gettimeofday.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RakNet\AutopatcherPatchContext.h" />
+    <ClInclude Include="RakNet\AutopatcherRepositoryInterface.h" />
+    <ClInclude Include="RakNet\Base64Encoder.h" />
+    <ClInclude Include="RakNet\BitStream.h" />
+    <QtMoc Include="CAddons.h">
+    </QtMoc>
+    <ClInclude Include="RakNet\CCRakNetSlidingWindow.h" />
+    <ClInclude Include="RakNet\CCRakNetUDT.h" />
+    <QtMoc Include="Style\CCustomWindow.h">
+    </QtMoc>
+    <QtMoc Include="CDownloader.h">
+    </QtMoc>
+    <QtMoc Include="CFavorite.h">
+    </QtMoc>
+    <QtMoc Include="CFavoriteManager.h">
+    </QtMoc>
+    <QtMoc Include="CFileTransferCallback.h">
+    </QtMoc>
+    <ClInclude Include="CInject.h" />
+    <QtMoc Include="CInternetManager.h">
+    </QtMoc>
+    <QtMoc Include="CLanguage.h">
+    </QtMoc>
+    <QtMoc Include="CMasterServerList.h">
+    </QtMoc>
+    <QtMoc Include="CMessageBox.h">
+    </QtMoc>
+    <QtMoc Include="CNetwork.h">
+    </QtMoc>
+    <QtMoc Include="CNetworkThread.h">
+    </QtMoc>
+    <QtMoc Include="COptions.h">
+    </QtMoc>
+    <QtMoc Include="RPC\CRPCDownloader.h">
+    </QtMoc>
+    <QtMoc Include="RPC\CRPCFavorite.h">
+    </QtMoc>
+    <QtMoc Include="RPC\CRPCInternet.h">
+    </QtMoc>
+    <ClInclude Include="CServerInfo.h" />
+    <QtMoc Include="CServerManager.h">
+    </QtMoc>
+    <ClInclude Include="CSettings.h" />
+    <QtMoc Include="CUrlDownloader.h">
+    </QtMoc>
+    <QtMoc Include="CVersion.h">
+    </QtMoc>
+    <QtMoc Include="Style\CWindowButton.h">
+    </QtMoc>
+    <QtMoc Include="Style\CWindowTitleBar.h">
+    </QtMoc>
+    <ClInclude Include="RakNet\CheckSum.h" />
+    <ClInclude Include="RakNet\CloudClient.h" />
+    <ClInclude Include="RakNet\CloudCommon.h" />
+    <ClInclude Include="RakNet\CloudServer.h" />
+    <ClInclude Include="RakNet\CommandParserInterface.h" />
+    <ClInclude Include="RakNet\ConnectionGraph2.h" />
+    <ClInclude Include="RakNet\ConsoleServer.h" />
+    <ClInclude Include="RakNet\DR_SHA1.h" />
+    <ClInclude Include="RakNet\DS_BPlusTree.h" />
+    <ClInclude Include="RakNet\DS_BinarySearchTree.h" />
+    <ClInclude Include="RakNet\DS_BytePool.h" />
+    <ClInclude Include="RakNet\DS_ByteQueue.h" />
+    <ClInclude Include="RakNet\DS_Hash.h" />
+    <ClInclude Include="RakNet\DS_Heap.h" />
+    <ClInclude Include="RakNet\DS_HuffmanEncodingTree.h" />
+    <ClInclude Include="RakNet\DS_HuffmanEncodingTreeFactory.h" />
+    <ClInclude Include="RakNet\DS_HuffmanEncodingTreeNode.h" />
+    <ClInclude Include="RakNet\DS_LinkedList.h" />
+    <ClInclude Include="RakNet\DS_List.h" />
+    <ClInclude Include="RakNet\DS_Map.h" />
+    <ClInclude Include="RakNet\DS_MemoryPool.h" />
+    <ClInclude Include="RakNet\DS_Multilist.h" />
+    <ClInclude Include="RakNet\DS_OrderedChannelHeap.h" />
+    <ClInclude Include="RakNet\DS_OrderedList.h" />
+    <ClInclude Include="RakNet\DS_Queue.h" />
+    <ClInclude Include="RakNet\DS_QueueLinkedList.h" />
+    <ClInclude Include="RakNet\DS_RangeList.h" />
+    <ClInclude Include="RakNet\DS_Table.h" />
+    <ClInclude Include="RakNet\DS_ThreadsafeAllocatingQueue.h" />
+    <ClInclude Include="RakNet\DS_Tree.h" />
+    <ClInclude Include="RakNet\DS_WeightedGraph.h" />
+    <ClInclude Include="RakNet\DataCompressor.h" />
+    <ClInclude Include="RakNet\DirectoryDeltaTransfer.h" />
+    <ClInclude Include="RakNet\DynDNS.h" />
+    <ClInclude Include="RakNet\EmailSender.h" />
+    <ClInclude Include="RakNet\EmptyHeader.h" />
+    <ClInclude Include="RakNet\EpochTimeToString.h" />
+    <ClInclude Include="RakNet\Export.h" />
+    <ClInclude Include="RakNet\FileList.h" />
+    <ClInclude Include="RakNet\FileListNodeContext.h" />
+    <ClInclude Include="RakNet\FileListTransfer.h" />
+    <ClInclude Include="RakNet\FileListTransferCBInterface.h" />
+    <ClInclude Include="RakNet\FileOperations.h" />
+    <ClInclude Include="RakNet\FormatString.h" />
+    <ClInclude Include="RakNet\FullyConnectedMesh2.h" />
+    <ClInclude Include="RakNet\GetTime.h" />
+    <ClInclude Include="RakNet\Getche.h" />
+    <ClInclude Include="RakNet\Gets.h" />
+    <ClInclude Include="GlobalDefines.h" />
+    <ClInclude Include="RakNet\GridSectorizer.h" />
+    <ClInclude Include="RakNet\HTTPConnection.h" />
+    <ClInclude Include="RakNet\HTTPConnection2.h" />
+    <ClInclude Include="RakNet\IncrementalReadInterface.h" />
+    <ClInclude Include="RakNet\InternalPacket.h" />
+    <ClInclude Include="RakNet\Itoa.h" />
+    <ClInclude Include="RakNet\Kbhit.h" />
+    <ClInclude Include="RakNet\LinuxStrings.h" />
+    <ClInclude Include="RakNet\LocklessTypes.h" />
+    <ClInclude Include="RakNet\LogCommandParser.h" />
+    <ClInclude Include="RakNet\MTUSize.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="RakNet\MessageFilter.h" />
+    <ClInclude Include="RakNet\MessageIdentifiers.h" />
+    <ClInclude Include="RakNet\NatPunchthroughClient.h" />
+    <ClInclude Include="RakNet\NatPunchthroughServer.h" />
+    <ClInclude Include="RakNet\NatTypeDetectionClient.h" />
+    <ClInclude Include="RakNet\NatTypeDetectionCommon.h" />
+    <ClInclude Include="RakNet\NatTypeDetectionServer.h" />
+    <ClInclude Include="RakNet\NativeFeatureIncludes.h" />
+    <ClInclude Include="RakNet\NativeFeatureIncludesOverrides.h" />
+    <ClInclude Include="RakNet\NativeTypes.h" />
+    <ClInclude Include="RakNet\NetworkIDManager.h" />
+    <ClInclude Include="RakNet\NetworkIDObject.h" />
+    <ClInclude Include="PCH.h" />
+    <ClInclude Include="RakNet\PS3Includes.h" />
+    <ClInclude Include="RakNet\PS4Includes.h" />
+    <ClInclude Include="RakNet\PacketConsoleLogger.h" />
+    <ClInclude Include="RakNet\PacketFileLogger.h" />
+    <ClInclude Include="RakNet\PacketLogger.h" />
+    <ClInclude Include="RakNet\PacketOutputWindowLogger.h" />
+    <ClInclude Include="RakNet\PacketPool.h" />
+    <ClInclude Include="RakNet\PacketPriority.h" />
+    <ClInclude Include="RakNet\PacketizedTCP.h" />
+    <ClInclude Include="RakNet\PluginInterface2.h" />
+    <ClInclude Include="RakNet\RPC4Plugin.h" />
+    <ClInclude Include="RakNet\Rackspace.h" />
+    <ClInclude Include="RakNet\RakAlloca.h" />
+    <ClInclude Include="RakNet\RakAssert.h" />
+    <ClInclude Include="RakNet\RakMemoryOverride.h" />
+    <ClInclude Include="RakNet\RakNetCommandParser.h" />
+    <ClInclude Include="RakNet\RakNetDefines.h" />
+    <ClInclude Include="RakNet\RakNetDefinesOverrides.h" />
+    <ClInclude Include="RakNetInclude.h" />
+    <ClInclude Include="RakNet\RakNetSmartPtr.h" />
+    <ClInclude Include="RakNet\RakNetSocket.h" />
+    <ClInclude Include="RakNet\RakNetSocket2.h" />
+    <ClInclude Include="RakNet\RakNetStatistics.h" />
+    <ClInclude Include="RakNet\RakNetTime.h" />
+    <ClInclude Include="RakNet\RakNetTransport2.h" />
+    <ClInclude Include="RakNet\RakNetTypes.h" />
+    <ClInclude Include="RakNet\RakNetVersion.h" />
+    <ClInclude Include="RakNet\RakPeer.h" />
+    <ClInclude Include="RakNet\RakPeerInterface.h" />
+    <ClInclude Include="RakNet\RakSleep.h" />
+    <ClInclude Include="RakNet\RakString.h" />
+    <ClInclude Include="RakNet\RakThread.h" />
+    <ClInclude Include="RakNet\RakWString.h" />
+    <ClInclude Include="RakNet\Rand.h" />
+    <ClInclude Include="RakNet\RandSync.h" />
+    <ClInclude Include="RakNet\ReadyEvent.h" />
+    <ClInclude Include="RakNet\RefCountedObj.h" />
+    <ClInclude Include="RakNet\RelayPlugin.h" />
+    <ClInclude Include="RakNet\ReliabilityLayer.h" />
+    <ClInclude Include="RakNet\ReplicaEnums.h" />
+    <ClInclude Include="RakNet\ReplicaManager3.h" />
+    <ClInclude Include="RakNet\Router2.h" />
+    <QtMoc Include="SLauncher.h">
+    </QtMoc>
+    <ClInclude Include="SLog.h" />
+    <ClInclude Include="RakNet\SecureHandshake.h" />
+    <ClInclude Include="RakNet\SendToThread.h" />
+    <ClInclude Include="ServerUnknow.h" />
+    <ClInclude Include="SettingUnknow.h" />
+    <ClInclude Include="RakNet\SignaledEvent.h" />
+    <ClInclude Include="RakNet\SimpleMutex.h" />
+    <ClInclude Include="RakNet\SimpleTCPServer.h" />
+    <ClInclude Include="RakNet\SingleProducerConsumer.h" />
+    <ClInclude Include="RakNet\SocketDefines.h" />
+    <ClInclude Include="RakNet\SocketIncludes.h" />
+    <ClInclude Include="RakNet\SocketLayer.h" />
+    <ClInclude Include="RakNet\StatisticsHistory.h" />
+    <ClInclude Include="RakNet\StringCompressor.h" />
+    <ClInclude Include="RakNet\StringTable.h" />
+    <ClInclude Include="Style\StyleDefines.h" />
+    <ClInclude Include="RakNet\SuperFastHash.h" />
+    <ClInclude Include="RakNet\TCPInterface.h" />
+    <ClInclude Include="RakNet\TableSerializer.h" />
+    <ClInclude Include="RakNet\TeamBalancer.h" />
+    <ClInclude Include="RakNet\TeamManager.h" />
+    <ClInclude Include="RakNet\TelnetTransport.h" />
+    <ClInclude Include="RakNet\ThreadPool.h" />
+    <ClInclude Include="RakNet\ThreadsafePacketLogger.h" />
+    <ClInclude Include="RakNet\TransportInterface.h" />
+    <ClInclude Include="RakNet\TwoWayAuthentication.h" />
+    <ClInclude Include="RakNet\UDPForwarder.h" />
+    <ClInclude Include="RakNet\UDPProxyClient.h" />
+    <ClInclude Include="RakNet\UDPProxyCommon.h" />
+    <ClInclude Include="RakNet\UDPProxyCoordinator.h" />
+    <ClInclude Include="RakNet\UDPProxyServer.h" />
+    <ClInclude Include="RakNet\VariableDeltaSerializer.h" />
+    <ClInclude Include="RakNet\VariableListDeltaTracker.h" />
+    <ClInclude Include="RakNet\VariadicSQLParser.h" />
+    <ClInclude Include="RakNet\VitaIncludes.h" />
+    <ClInclude Include="RakNet\WSAStartupSingleton.h" />
+    <ClInclude Include="RakNet\WindowsIncludes.h" />
+    <ClInclude Include="RakNet\XBox360Includes.h" />
+    <ClInclude Include="RakNet\_FindFirst.h" />
+    <ClInclude Include="RakNet\gettimeofday.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="CAddons.ui">
+    </QtUic>
+    <QtUic Include="CDownloader.ui">
+    </QtUic>
+    <QtUic Include="CFavorite.ui">
+    </QtUic>
+    <QtUic Include="CMessageBox.ui">
+    </QtUic>
+    <QtUic Include="COptions.ui">
+    </QtUic>
+    <QtUic Include="CUrlDownloader.ui">
+    </QtUic>
+    <QtUic Include="SLauncher.ui">
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Style\img\checkbox.png" />
+    <None Include="Style\img\down_arrow.png" />
+    <None Include="go.css" />
+    <None Include="img\go_background.png" />
+    <None Include="img\go_logo.png" />
+    <None Include="img\go_splash.png" />
+    <None Include="img\go_widget.png" />
+    <None Include="Style\img\left_arrow.png" />
+    <QtRcc Include="resource.qrc">
+    </QtRcc>
+    <None Include="Style\img\right_arrow.png" />
+    <None Include="Style\img\up_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\GO_Launcher_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

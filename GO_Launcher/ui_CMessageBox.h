@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'CMessageBox.ui'
 **
-** Created by: Qt User Interface Compiler version 5.4.0
+** Created by: Qt User Interface Compiler version 5.12.11
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,8 @@
 #define UI_CMESSAGEBOX_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -35,16 +32,16 @@ public:
     void setupUi(QWidget *CMessageBox)
     {
         if (CMessageBox->objectName().isEmpty())
-            CMessageBox->setObjectName(QStringLiteral("CMessageBox"));
+            CMessageBox->setObjectName(QString::fromUtf8("CMessageBox"));
         CMessageBox->resize(380, 140);
         gridLayoutWidget = new QWidget(CMessageBox);
-        gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
+        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
         gridLayoutWidget->setGeometry(QRect(10, 30, 361, 101));
         gridLayout = new QGridLayout(gridLayoutWidget);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
         buttonOk = new QPushButton(gridLayoutWidget);
-        buttonOk->setObjectName(QStringLiteral("buttonOk"));
+        buttonOk->setObjectName(QString::fromUtf8("buttonOk"));
         buttonOk->setMinimumSize(QSize(80, 0));
         buttonOk->setMaximumSize(QSize(16777215, 16777215));
 
@@ -59,7 +56,7 @@ public:
         gridLayout->addItem(horizontalSpacer_2, 1, 2, 1, 1);
 
         labelMessage = new QLabel(gridLayoutWidget);
-        labelMessage->setObjectName(QStringLiteral("labelMessage"));
+        labelMessage->setObjectName(QString::fromUtf8("labelMessage"));
         labelMessage->setTextFormat(Qt::RichText);
         labelMessage->setAlignment(Qt::AlignCenter);
         labelMessage->setOpenExternalLinks(true);
@@ -74,9 +71,9 @@ public:
 
     void retranslateUi(QWidget *CMessageBox)
     {
-        CMessageBox->setWindowTitle(QApplication::translate("CMessageBox", "Form", 0));
-        buttonOk->setText(QApplication::translate("CMessageBox", "Ok", 0));
-        labelMessage->setText(QApplication::translate("CMessageBox", "TextLabel", 0));
+        CMessageBox->setWindowTitle(QApplication::translate("CMessageBox", "Form", nullptr));
+        buttonOk->setText(QApplication::translate("CMessageBox", "Ok", nullptr));
+        labelMessage->setText(QApplication::translate("CMessageBox", "TextLabel", nullptr));
     } // retranslateUi
 
 };

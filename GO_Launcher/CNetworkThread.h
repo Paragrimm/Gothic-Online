@@ -24,9 +24,9 @@ signals:
 public:
     ~CNetworkThread();
 
-    inline CRPCInternet*          getInternetRCP()          { return &m_InternetRPC; }
-    inline CRPCFavorite*          getFavoriteRPC()          { return &m_FavoriteRPC; }
-    inline CRPCDownloader*        getDownloaderRPC()        { return &m_DownloaderRPC; }
+    inline CRPCInternet*          getInternetRCP()          { return m_InternetRPC; }
+    inline CRPCFavorite*          getFavoriteRPC()          { return m_FavoriteRPC; }
+    inline CRPCDownloader*        getDownloaderRPC()        { return m_DownloaderRPC; }
     inline CFileTransferCallback* getFileTransferCallback() { return &m_FileTransferCallback; }
 
     void start(QThread &thread, RakNet::RakPeerInterface *peer);
@@ -34,6 +34,8 @@ public:
     bool connectToServer(QString ipAdress, int port);
     void disconnectFromCurrent(bool unfinished = false);
     void setIndex(int index);
+
+    void init();
 
 private:
     CNetworkThread();
@@ -47,9 +49,9 @@ private:
     RakNet::PacketizedTCP m_RakTCP;
     RakNet::SystemAddress m_serverAdress;
     RakNet::Packet *m_Packet;
-    CRPCInternet m_InternetRPC;
-    CRPCFavorite m_FavoriteRPC;
-    CRPCDownloader m_DownloaderRPC;
+    CRPCInternet* m_InternetRPC;
+    CRPCFavorite* m_FavoriteRPC;
+    CRPCDownloader* m_DownloaderRPC;
     CFileTransferCallback m_FileTransferCallback;
     bool m_ThreadRunning, m_EnableTCP, m_Unfinished;
     int m_Index;

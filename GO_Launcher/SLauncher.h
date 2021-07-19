@@ -54,12 +54,13 @@ public:
     inline CSettings&           getSettings()              { return m_Settings; }
     inline CServerManager*      getServerInternetManager() { return m_ServerInternet; }
     inline CServerManager*      getServerFavoriteManager() { return m_ServerFavorite; }
-    inline CNetwork&            getNetwork()               { return m_Network; }
-    inline CInternetManager&    getInternetManager()       { return m_InternetManager; }
-    inline CFavoriteManager&    getFavoriteManager()       { return m_FavoriteManager; }
+    inline CNetwork&            getNetwork()               { return *m_Network; }
+    inline CInternetManager&    getInternetManager()       { return *m_InternetManager; }
+    inline CFavoriteManager&    getFavoriteManager()       { return *m_FavoriteManager; }
     inline CInject&             getInjector()              { return m_Injector; }
-    inline CVersion&            getVersionManager()        { return m_Version; }
+    inline CVersion&            getVersionManager()        { return *m_Version; }
 
+    void initManagers();
 private:
     // Normal Method
     void initWidgets();
@@ -72,11 +73,11 @@ private:
     QSplashScreen m_SplashScreen;
     CSettings m_Settings;
     CServerManager *m_ServerInternet, *m_ServerFavorite;
-    CInternetManager m_InternetManager;
-    CFavoriteManager m_FavoriteManager;
-    CNetwork m_Network;
+    CInternetManager* m_InternetManager;
+    CFavoriteManager* m_FavoriteManager;
+    CNetwork* m_Network;
     CInject m_Injector;
-    CVersion m_Version;
+    CVersion* m_Version;
 
     CAddons *m_AddonWidget;
     COptions *m_OptionWidget;

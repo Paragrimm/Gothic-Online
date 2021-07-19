@@ -11,9 +11,6 @@
 SLauncher::SLauncher(QWidget *parent) :
     CCustomWindow(QString(":/img/go_background.png"), parent),
     m_SplashScreen(QPixmap(":/img/go_splash.png")),
-    m_AddonWidget(new CAddons),
-    m_OptionWidget(new COptions),
-    m_VersionName(cryptString(VERSION_NAME_LENGHT, VERSION_NAME).c_str()),
     m_VersionLabel(this),
     ui(new Ui::SLauncher)
 {
@@ -22,10 +19,6 @@ SLauncher::SLauncher(QWidget *parent) :
 #endif
 
     LOG("[info] Opening Launcher");
-
-    initWidgets();
-    initConnections();
-    initMetaType();
 }
 
 SLauncher::~SLauncher()
@@ -45,6 +38,10 @@ SLauncher::~SLauncher()
     delete m_ServerFavorite;
     delete m_AddonWidget;
     delete m_OptionWidget;
+    delete m_InternetManager;
+    delete m_FavoriteManager;
+    delete m_Network;
+    delete m_Version;
 
     delete ui;
 
@@ -63,6 +60,11 @@ SLauncher& SLauncher::getInstance()
 
 void SLauncher::init()
 {
+    m_VersionName = cryptString(VERSION_NAME_LENGHT, VERSION_NAME).c_str();
+    initWidgets();
+    initConnections();
+    initMetaType();
+
     // Enable debug privileges (injection on some systems)
     HANDLE hToken;
     LUID sedebugnameValue;
@@ -82,21 +84,22 @@ void SLauncher::init()
         CloseHandle( hToken );
 
     // Check update
-    m_Version.checkUpdates();
+    // skipped update check
+    //m_Version->checkUpdates();
 
     // Splash screen
     m_SplashScreen.show();
 
     QTimer::singleShot(2000, &m_SplashScreen, SLOT(close()));
     QTimer::singleShot(2000, this, SLOT(show()));
-    QTimer::singleShot(2000, &m_Version, SLOT(checkVersion()));
+    QTimer::singleShot(2000, m_Version, SLOT(checkVersion()));
 
     // Init data
     m_ServerInternet = new CServerManager(ui->treeInternet);
     m_ServerFavorite = new CServerManager(ui->treeFavorite);
 
     m_Settings.loadLauncherSettings();
-    m_FavoriteManager.loadFavoriteList();
+    m_FavoriteManager->loadFavoriteList();
 
     m_Language.init();
     translate();
@@ -210,8 +213,8 @@ void SLauncher::translate()
     m_AddonWidget->translate();
     m_OptionWidget->translate();
 
-    m_FavoriteManager.translate();
-    m_InternetManager.translate();
+    m_FavoriteManager->translate();
+    m_InternetManager->translate();
 
     CServerManager::fillServerInfo();
 
@@ -272,16 +275,16 @@ void SLauncher::initConnections()
             m_OptionWidget, SLOT(customShow()));
 
     connect(ui->buttonAdd, SIGNAL(released()),
-            &m_FavoriteManager, SLOT(onButtonAddClicked()));
+            m_FavoriteManager, SLOT(onButtonAddClicked()));
 
     connect(ui->buttonEdit, SIGNAL(released()),
-            &m_FavoriteManager, SLOT(onButtonEditClicked()));
+            m_FavoriteManager, SLOT(onButtonEditClicked()));
 
     connect(ui->buttonRemove, SIGNAL(released()),
-            &m_FavoriteManager, SLOT(onButtonRemoveClicked()));
+            m_FavoriteManager, SLOT(onButtonRemoveClicked()));
 
     connect(ui->tabServerList, SIGNAL(currentChanged(int)),
-            &m_Network, SLOT(onTabIndexChanged(int)));
+            m_Network, SLOT(onTabIndexChanged(int)));
 }
 
 void SLauncher::initMetaType()
@@ -301,6 +304,16 @@ void SLauncher::loadCSS(QString filename)
     qApp->setStyleSheet(styleSheet);
 }
 
+void SLauncher::initManagers()
+{
+    m_Version = new CVersion();
+    m_InternetManager = new CInternetManager();
+    m_FavoriteManager = new CFavoriteManager();
+    m_Network = new CNetwork();
+    m_AddonWidget = new CAddons();
+    m_OptionWidget = new COptions();
+}
+
 //-------------------------------------------------------------------------------------------------------------------------------
 //  Private slots
 //-------------------------------------------------------------------------------------------------------------------------------
@@ -316,12 +329,12 @@ void SLauncher::onRefresh()
     switch (ui->tabServerList->currentIndex())
     {
     case INDEX_INTERNET:
-        m_InternetManager.serverList();
+        m_InternetManager->serverList();
         break;
 
     case INDEX_FAVORITE:
-        m_InternetManager.clear();
-        m_FavoriteManager.serverList();
+        m_InternetManager->clear();
+        m_FavoriteManager->serverList();
         break;
     }
 }

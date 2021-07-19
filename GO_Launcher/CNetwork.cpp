@@ -51,7 +51,7 @@ void CNetwork::sendRequest(QVector<CServerInfo> &serverList, int index)
 
         // Thread safe
         m_Mutex.lock();
-        for (CServerInfo &info : serverList)
+        for (const CServerInfo &info : serverList)
             m_Peer->Ping(info.getIpAdress().toStdString().c_str(), info.getPort().toInt(), false);
         m_Mutex.unlock();
 
@@ -104,6 +104,9 @@ void CNetwork::onTabIndexChanged(int index)
 
 void CNetwork::initConnections()
 {
+    // init before using network
+    NETWORK.init();
+
     // Internet
     connect(NETWORK.getInternetRCP(), SIGNAL(signalServerPing(QString,int,int)),
             this, SLOT(onInternetServerReached(QString,int,int)));

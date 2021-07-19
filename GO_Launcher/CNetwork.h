@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QThread>
+#include <QMutex>
 
 #include "RakNetInclude.h"
 #include "CNetworkThread.h"

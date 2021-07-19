@@ -113,7 +113,7 @@ void CRPCFavorite::getInformation()
         m_CheckingServer = true;
         std::string decryptedPassword = LAUNCHER.decryptString(NETWORK.m_ServerPassword);
 
-        Server &server = m_ServerQueue.dequeue();
+        const Server &server = m_ServerQueue.dequeue();
         NETWORK.m_ptrPeer->Connect(server.m_IP.toStdString().c_str(), server.m_Port,
                                    decryptedPassword.c_str(), decryptedPassword.length());
     }

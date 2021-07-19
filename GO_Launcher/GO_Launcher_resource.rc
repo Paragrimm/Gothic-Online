@@ -1,10 +1,6 @@
-# if defined(UNDER_CE)
-#  include <winbase.h>
-# else
-#  include <winver.h>
-# endif
+#include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"C:\\Users\\v0id1\\Desktop\\GO_Svn\\GO\\GO_Launcher\\go_icon.ico"
+IDI_ICON1	ICON	DISCARDABLE	"go_icon.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0

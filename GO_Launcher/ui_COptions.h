@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'COptions.ui'
 **
-** Created by: Qt User Interface Compiler version 5.4.0
+** Created by: Qt User Interface Compiler version 5.12.11
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,13 +10,10 @@
 #define UI_COPTIONS_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
@@ -50,26 +47,26 @@ public:
     void setupUi(QWidget *COptions)
     {
         if (COptions->objectName().isEmpty())
-            COptions->setObjectName(QStringLiteral("COptions"));
+            COptions->setObjectName(QString::fromUtf8("COptions"));
         COptions->resize(400, 380);
         gridLayoutWidget = new QWidget(COptions);
-        gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
+        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
         gridLayoutWidget->setGeometry(QRect(9, 29, 381, 341));
         gridLayout = new QGridLayout(gridLayoutWidget);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
         gboxVideo = new QGroupBox(gridLayoutWidget);
-        gboxVideo->setObjectName(QStringLiteral("gboxVideo"));
+        gboxVideo->setObjectName(QString::fromUtf8("gboxVideo"));
         gboxVideo->setMaximumSize(QSize(16777215, 16777215));
         gridLayout_2 = new QGridLayout(gboxVideo);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         labelResolutionX = new QLabel(gboxVideo);
-        labelResolutionX->setObjectName(QStringLiteral("labelResolutionX"));
+        labelResolutionX->setObjectName(QString::fromUtf8("labelResolutionX"));
 
         gridLayout_2->addWidget(labelResolutionX, 0, 0, 1, 1);
 
         spinResolutionX = new QSpinBox(gboxVideo);
-        spinResolutionX->setObjectName(QStringLiteral("spinResolutionX"));
+        spinResolutionX->setObjectName(QString::fromUtf8("spinResolutionX"));
         spinResolutionX->setMinimum(800);
         spinResolutionX->setMaximum(5000);
         spinResolutionX->setDisplayIntegerBase(10);
@@ -77,19 +74,19 @@ public:
         gridLayout_2->addWidget(spinResolutionX, 0, 1, 1, 1);
 
         labelResolutionY = new QLabel(gboxVideo);
-        labelResolutionY->setObjectName(QStringLiteral("labelResolutionY"));
+        labelResolutionY->setObjectName(QString::fromUtf8("labelResolutionY"));
 
         gridLayout_2->addWidget(labelResolutionY, 1, 0, 1, 1);
 
         spinResolutionY = new QSpinBox(gboxVideo);
-        spinResolutionY->setObjectName(QStringLiteral("spinResolutionY"));
+        spinResolutionY->setObjectName(QString::fromUtf8("spinResolutionY"));
         spinResolutionY->setMinimum(600);
         spinResolutionY->setMaximum(5000);
 
         gridLayout_2->addWidget(spinResolutionY, 1, 1, 1, 1);
 
         cboxWindowMode = new QCheckBox(gboxVideo);
-        cboxWindowMode->setObjectName(QStringLiteral("cboxWindowMode"));
+        cboxWindowMode->setObjectName(QString::fromUtf8("cboxWindowMode"));
 
         gridLayout_2->addWidget(cboxWindowMode, 2, 0, 1, 2);
 
@@ -97,39 +94,39 @@ public:
         gridLayout->addWidget(gboxVideo, 0, 0, 1, 1);
 
         gboxSound = new QGroupBox(gridLayoutWidget);
-        gboxSound->setObjectName(QStringLiteral("gboxSound"));
+        gboxSound->setObjectName(QString::fromUtf8("gboxSound"));
         gridLayout_3 = new QGridLayout(gboxSound);
-        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         cboxSound = new QCheckBox(gboxSound);
-        cboxSound->setObjectName(QStringLiteral("cboxSound"));
+        cboxSound->setObjectName(QString::fromUtf8("cboxSound"));
 
         gridLayout_3->addWidget(cboxSound, 0, 0, 1, 1);
 
         sliderMusic = new QSlider(gboxSound);
-        sliderMusic->setObjectName(QStringLiteral("sliderMusic"));
+        sliderMusic->setObjectName(QString::fromUtf8("sliderMusic"));
         sliderMusic->setOrientation(Qt::Horizontal);
 
         gridLayout_3->addWidget(sliderMusic, 4, 0, 1, 2);
 
         cboxMusic = new QCheckBox(gboxSound);
-        cboxMusic->setObjectName(QStringLiteral("cboxMusic"));
+        cboxMusic->setObjectName(QString::fromUtf8("cboxMusic"));
 
         gridLayout_3->addWidget(cboxMusic, 0, 1, 1, 1);
 
         sliderSound = new QSlider(gboxSound);
-        sliderSound->setObjectName(QStringLiteral("sliderSound"));
+        sliderSound->setObjectName(QString::fromUtf8("sliderSound"));
         sliderSound->setOrientation(Qt::Horizontal);
 
         gridLayout_3->addWidget(sliderSound, 2, 0, 1, 2);
 
         labelSound = new QLabel(gboxSound);
-        labelSound->setObjectName(QStringLiteral("labelSound"));
+        labelSound->setObjectName(QString::fromUtf8("labelSound"));
         labelSound->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(labelSound, 1, 0, 1, 2);
 
         labelMusic = new QLabel(gboxSound);
-        labelMusic->setObjectName(QStringLiteral("labelMusic"));
+        labelMusic->setObjectName(QString::fromUtf8("labelMusic"));
         labelMusic->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(labelMusic, 3, 0, 1, 2);
@@ -138,7 +135,7 @@ public:
         gridLayout->addWidget(gboxSound, 1, 0, 1, 1);
 
         buttonSave = new QPushButton(gridLayoutWidget);
-        buttonSave->setObjectName(QStringLiteral("buttonSave"));
+        buttonSave->setObjectName(QString::fromUtf8("buttonSave"));
 
         gridLayout->addWidget(buttonSave, 2, 0, 1, 1);
 
@@ -150,17 +147,17 @@ public:
 
     void retranslateUi(QWidget *COptions)
     {
-        COptions->setWindowTitle(QApplication::translate("COptions", "Form", 0));
-        gboxVideo->setTitle(QApplication::translate("COptions", "GroupBox", 0));
-        labelResolutionX->setText(QApplication::translate("COptions", "TextLabel", 0));
-        labelResolutionY->setText(QApplication::translate("COptions", "TextLabel", 0));
-        cboxWindowMode->setText(QApplication::translate("COptions", "CheckBox", 0));
-        gboxSound->setTitle(QApplication::translate("COptions", "GroupBox", 0));
-        cboxSound->setText(QApplication::translate("COptions", "CheckBox", 0));
-        cboxMusic->setText(QApplication::translate("COptions", "CheckBox", 0));
-        labelSound->setText(QApplication::translate("COptions", "TextLabel", 0));
-        labelMusic->setText(QApplication::translate("COptions", "TextLabel", 0));
-        buttonSave->setText(QApplication::translate("COptions", "PushButton", 0));
+        COptions->setWindowTitle(QApplication::translate("COptions", "Form", nullptr));
+        gboxVideo->setTitle(QApplication::translate("COptions", "GroupBox", nullptr));
+        labelResolutionX->setText(QApplication::translate("COptions", "TextLabel", nullptr));
+        labelResolutionY->setText(QApplication::translate("COptions", "TextLabel", nullptr));
+        cboxWindowMode->setText(QApplication::translate("COptions", "CheckBox", nullptr));
+        gboxSound->setTitle(QApplication::translate("COptions", "GroupBox", nullptr));
+        cboxSound->setText(QApplication::translate("COptions", "CheckBox", nullptr));
+        cboxMusic->setText(QApplication::translate("COptions", "CheckBox", nullptr));
+        labelSound->setText(QApplication::translate("COptions", "TextLabel", nullptr));
+        labelMusic->setText(QApplication::translate("COptions", "TextLabel", nullptr));
+        buttonSave->setText(QApplication::translate("COptions", "PushButton", nullptr));
     } // retranslateUi
 
 };

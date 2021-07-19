@@ -55,6 +55,13 @@ void CNetworkThread::setIndex(int index)
     m_Index = index;
 }
 
+void CNetworkThread::init()
+{
+    m_InternetRPC = new CRPCInternet;
+    m_FavoriteRPC = new CRPCFavorite;
+    m_DownloaderRPC = new CRPCDownloader;
+}
+
 //-------------------------------------------------------------------------------------------------------------------------------
 //  Private method
 //-------------------------------------------------------------------------------------------------------------------------------
@@ -86,12 +93,12 @@ void CNetworkThread::handleNetwork()
             switch (m_Index)
             {
             case INDEX_INTERNET:
-                m_InternetRPC.handlePacket(m_Packet);
+                m_InternetRPC->handlePacket(m_Packet);
                 break;
 
             case INDEX_FAVORITE:
 
-                m_FavoriteRPC.handlePacket(m_Packet);
+                m_FavoriteRPC->handlePacket(m_Packet);
                 break;
             }
 
@@ -101,7 +108,7 @@ void CNetworkThread::handleNetwork()
         else
         {
             // Clear downloader
-            m_DownloaderRPC.cancelDownload(m_Unfinished);
+            m_DownloaderRPC->cancelDownload(m_Unfinished);
             m_RakTCP.CloseConnection(m_serverAdress);
 
             m_EnableTCP = true;
@@ -109,7 +116,7 @@ void CNetworkThread::handleNetwork()
             emit signalDownloaderQuit();
         }
 
-        m_DownloaderRPC.handle();
+        m_DownloaderRPC->handle();
 
         RakSleep(10);
     }

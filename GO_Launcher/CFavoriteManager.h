@@ -30,7 +30,9 @@ private:
         FavoriteServer() {}
         FavoriteServer(QString ipAdress, QString port) : m_IP(ipAdress), m_Port(port) {}
 
-        bool operator== (const FavoriteServer& server) { return m_IP == server.m_IP && m_Port == server.m_Port; }
+        //bool operator== (FavoriteServer& server) { return true; } //  return m_IP == server.m_IP && m_Port == server.m_Port;
+        friend bool operator==(const FavoriteServer& lhs, const FavoriteServer& rhs)
+        { return lhs.m_IP == rhs.m_IP && lhs.m_IP == rhs.m_Port; }
     };
 
     void initConnections();
