@@ -139,6 +139,9 @@
       <QtUicDir>$(ProjectDir)</QtUicDir>
       <QtUicFileName>ui_%(Filename).h</QtUicFileName>
     </QtUic>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -200,7 +203,9 @@
       <QtUicFileName>ui_%(Filename).h</QtUicFileName>
     </QtUic>
     <PostBuildEvent>
-      <Command>xcopy /y /d "DLLs" "$(OutDir)"</Command>
+      <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"
+xcopy /y /d "lang" "$(OutDir)/lang"
+xcopy /y /d "Multiplayer" "$(OutDir)/Multiplayer"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

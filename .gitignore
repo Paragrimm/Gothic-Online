@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 # Config Files
 go_conf.ini
+
+# DO NOT IGNORE DLLs
+!/GO_Launcher/DLLs/*

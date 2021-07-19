@@ -16,3 +16,19 @@ Zengin:
 - Relevant for: GO_Client
 - Add the following path to: Include, External Includes, Library
 - {PathToRepo}\GO_Client\zengin
+
+# Solutions
+## GO_Launcher
+Is the Gothic Online Launcher that is needed to connect to a server (GO_Server).
+
+Files needed in Release:
+- GO_Launcher.exe
+- "lang"-Directory with content
+- "Multiplayer"-Directory with content
+- the following DLLs:
+  - Qt5Core(d).dll
+  - Qt5Widgets(d).dll
+  - Qt5Network(d).dll
+  - Qt5Gui(d).dll
+
+The "(d)" is because the debug-build needs the DLLs with "d" (eg.: Qt5Cored.dll) and the release-build needs the DLLs without "d" (eg.: Qt5Core.dll)
