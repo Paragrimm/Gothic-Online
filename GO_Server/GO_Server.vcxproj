@@ -48,6 +48,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
     <CodeAnalysisRuleAssemblies />
+    <IncludePath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)output\$(Configuration)\Server\</OutDir>

@@ -48,7 +48,9 @@ void CClient::Start()
 	this->InitializeHooks();
 
 	// Initialize keyboard layout
-	if (pConfig->GetLanguage() == "ru")
+	if (pConfig->GetLanguage() == "en")
+		pKeyBoard->SetLayout(CKeyBoard::ENGLISH);
+	else if (pConfig->GetLanguage() == "ru")
 		pKeyBoard->SetLayout(CKeyBoard::RUSSIAN);
 
 	DLOG("Client started");

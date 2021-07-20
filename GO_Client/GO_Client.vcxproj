@@ -14,15 +14,14 @@
     <ProjectGuid>{904FDB99-AD5D-441C-8979-916A8DB6987B}</ProjectGuid>
     <RootNamespace>GO_Client</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <CLRSupport>false</CLRSupport>
     <WholeProgramOptimization>false</WholeProgramOptimization>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -49,6 +48,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
     <CodeAnalysisRuleAssemblies />
+    <IncludePath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)output\$(Configuration)\Client\</OutDir>
@@ -57,9 +59,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules />
     <CodeAnalysisRuleAssemblies />
-    <IncludePath>C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\henry\source\repos\Gothic-Online\Shared\Squirrel\include;C:\Users\henry\source\repos\Gothic-Online\GO_Client\zengin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
