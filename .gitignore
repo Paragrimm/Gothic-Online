@@ -367,3 +367,6 @@ go_conf.ini
 
 # DO NOT IGNORE DLLs
 !/GO_Launcher/DLLs/*
+
+# ignore qt generated ui files
+/GO_Launcher/ui_*
