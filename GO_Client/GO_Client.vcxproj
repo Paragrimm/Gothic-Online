@@ -335,6 +335,7 @@
     <ClInclude Include="CSplashScreen.h" />
     <ClInclude Include="CVob.h" />
     <ClInclude Include="CVobManager.h" />
+    <ClInclude Include="de_layout.h" />
     <ClInclude Include="Interface\CNetInterface.h" />
     <ClInclude Include="Interface\COptionsMenu.h" />
     <ClInclude Include="Interface\CPlayerList.h" />

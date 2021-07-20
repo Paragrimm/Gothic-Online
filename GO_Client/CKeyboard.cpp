@@ -1,11 +1,13 @@
 #include "stdafx.h"
 // Layouts
 #include "Keyboard/ru_layout.h"
+#include "Keyboard/de_layout.h"
 
 CKeyBoard::CKeyBoard() :
 	keyLayout(CKeyBoard::ENGLISH)
 {
 	ru_init();
+	de_init();
 }
 
 void CKeyBoard::SetLayout(KeyBoardLayout layout)
@@ -24,13 +26,12 @@ void CKeyBoard::SwitchLayout()
 
 char CKeyBoard::GetTranslatedLetter(char letter)
 {
-	bool capslock = zCInput::GetInput()->KeyPressed(KEY_CAPSLOCK);
-	bool tilde = zCInput::GetInput()->KeyPressed(KEY_GRAVE);
-
 	switch (this->keyLayout)
 	{
 	case ENGLISH:
 		return letter;
+	case GERMAN:
+		return de_layout[letter] != 0 ? de_layout[letter] : letter;
 	case RUSSIAN:
 		if (zCInput::GetInput()->KeyPressed(KEY_GRAVE))
 			return ru_tilde[zCInput::GetInput()->KeyPressed(KEY_LSHIFT) || zCInput::GetInput()->KeyPressed(KEY_RSHIFT)];

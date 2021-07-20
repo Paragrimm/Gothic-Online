@@ -1,7 +1,7 @@
 #ifndef CKEYBOARD_H
 #define CKEYBOARD_H
 
-#define MAX_KEYBOARD_LAYOUTS 2
+#define MAX_KEYBOARD_LAYOUTS 3
 
 class CKeyBoard
 {
@@ -9,7 +9,8 @@ public:
 	enum KeyBoardLayout
 	{
 		ENGLISH,
-		RUSSIAN
+		RUSSIAN,
+		GERMAN
 	};
 
 	CKeyBoard();

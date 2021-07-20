@@ -52,6 +52,8 @@ void CClient::Start()
 		pKeyBoard->SetLayout(CKeyBoard::ENGLISH);
 	else if (pConfig->GetLanguage() == "ru")
 		pKeyBoard->SetLayout(CKeyBoard::RUSSIAN);
+	else if (pConfig->GetLanguage() == "de")
+		pKeyBoard->SetLayout(CKeyBoard::GERMAN);
 
 	DLOG("Client started");
 };

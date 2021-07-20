@@ -80,6 +80,16 @@
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)client-scripts\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\client-scripts\" "$(OutDir)client-scripts"
+mkdir "$(OutDir)download\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\download" "$(OutDir)download"
+mkdir "$(OutDir)modules\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\modules" "$(OutDir)modules"
+mkdir "$(OutDir)server-scripts\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\server-scripts" "$(OutDir)server-scripts"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -100,6 +110,16 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)client-scripts\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\client-scripts\" "$(OutDir)client-scripts"
+mkdir "$(OutDir)download\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\download" "$(OutDir)download"
+mkdir "$(OutDir)modules\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\modules" "$(OutDir)modules"
+mkdir "$(OutDir)server-scripts\"
+xcopy /y /d "$(ProjectDir)AdditionalServerFiles\server-scripts" "$(OutDir)server-scripts"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Shared\goMath\goMath.cpp" />

@@ -1098,6 +1098,9 @@
     <ClInclude Include="MemLib\MemLib.h">
       <Filter>MemLib</Filter>
     </ClInclude>
+    <ClInclude Include="de_layout.h">
+      <Filter>Core\Keyboard</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">

@@ -1,5 +1,16 @@
 static char de_layout[128];
-static char de_tilde[2];
+
+/*
+* Wrong Keys (DE = what I pressed; EN = what was displayed ingame):
+* DE | EN
+* %  | #
+* #  | \ - ???
+* '  | | - ???
+* ´  | Nothing (no accents)
+* `  | Nothing (no accents)
+* 
+*/
+
 
 static void de_init()
 {
@@ -7,79 +18,29 @@ static void de_init()
 		de_layout[i] = 0;
 
 	// Define translate
-	de_layout['q'] = 'é';
-	de_layout['Q'] = 'É';
-	de_layout['w'] = 'ö';
-	de_layout['W'] = 'Ö';
-	de_layout['e'] = 'ó';
-	de_layout['E'] = 'Ó';
-	de_layout['r'] = 'ê';
-	de_layout['R'] = 'Ê';
-	de_layout['t'] = 'å';
-	de_layout['T'] = 'Å';
-	de_layout['y'] = 'í';
-	de_layout['Y'] = 'Í';
-	de_layout['u'] = 'ã';
-	de_layout['U'] = 'Ã';
-	de_layout['i'] = 'ø';
-	de_layout['I'] = 'Ø';
-	de_layout['o'] = 'ù';
-	de_layout['O'] = 'Ù';
-	de_layout['p'] = 'ç';
-	de_layout['P'] = 'Ç';
-	de_layout['('] = 'õ';
-	de_layout['{'] = 'Õ';
-	de_layout[')'] = 'ú';
-	de_layout['}'] = 'Ú';
-	de_layout['a'] = 'ô';
-	de_layout['A'] = 'Ô';
-	de_layout['s'] = 'û';
-	de_layout['S'] = 'Û';
-	de_layout['d'] = 'â';
-	de_layout['D'] = 'Â';
-	de_layout['f'] = 'à';
-	de_layout['F'] = 'À';
-	de_layout['g'] = 'ï';
-	de_layout['G'] = 'Ï';
-	de_layout['h'] = 'ð';
-	de_layout['H'] = 'Ð';
-	de_layout['j'] = 'î';
-	de_layout['J'] = 'Î';
-	de_layout['k'] = 'ë';
-	de_layout['K'] = 'Ë';
-	de_layout['l'] = 'ä';
-	de_layout['L'] = 'Ä';
-	de_layout[';'] = 'æ';
-	de_layout[':'] = 'Æ';
-	de_layout['\''] = 'ý';
-	de_layout['"'] = 'Ý';
-	de_layout['z'] = 'ÿ';
-	de_layout['Z'] = 'ß';
-	de_layout['x'] = '÷';
-	de_layout['X'] = '×';
-	de_layout['c'] = 'ñ';
-	de_layout['C'] = 'Ñ';
-	de_layout['v'] = 'ì';
-	de_layout['V'] = 'Ì';
-	de_layout['b'] = 'è';
-	de_layout['B'] = 'È';
-	de_layout['n'] = 'ò';
-	de_layout['N'] = 'Ò';
-	de_layout['m'] = 'ü';
-	de_layout['M'] = 'Ü';
-	de_layout[','] = 'á';
-	de_layout['<'] = 'Á';
-	de_layout['.'] = 'þ';
-	de_layout['>'] = 'Þ';
-	de_layout['/'] = '.';
-	de_layout['?'] = ',';
+	de_layout['y'] = 'z';
+	de_layout['Y'] = 'Z';
+	de_layout['z'] = 'y';
+	de_layout['Z'] = 'Y';
+	de_layout['('] = ')';
+	//de_layout['['] = 'ü';
+	de_layout['{'] = 'Ü';
+	de_layout['\''] = 'ä';
+	de_layout['"'] = 'Ä';
+	//de_layout[','] = 'ö';
+	//de_layout[':'] = 'Ö';
+	de_layout[')'] = '=';
+	de_layout['}'] = '*';
+	de_layout[';'] = '#';
+	de_layout[':'] = '\'';
+	de_layout['<'] = ';';
+	de_layout['>'] = ':';
+	de_layout['/'] = '-';
+	de_layout['?'] = '_';
 	de_layout['@'] = '"';
-	de_layout['#'] = '¹';
-	de_layout['$'] = ';';
-	de_layout['^'] = ':';
-	de_layout['&'] = '?';
-
-	// Tilde
-	de_tilde[0] = '¸';
-	de_tilde[1] = '¨';
+	de_layout['#'] = '§';
+	de_layout['^'] = '&';
+	de_layout['&'] = '/';
+	de_layout['é'] = '€';
+	de_layout['-'] = 'ß';
 }

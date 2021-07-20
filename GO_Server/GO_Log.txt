@@ -93,3 +93,17 @@
 [info] Listening for connections on 192.168.2.100:28970...
 [Downloader] Number of files to download: 0
 [Downloader] Thread started, waiting for peers..
+-== Gothic Online Server 0.4.6a ==-
+[info] Config file found
+[config] Server name: Default server name
+[config] Server port: 28970
+[config] Max slots: 32
+[config] Client script: client-main.gm
+[config] Server script: server-main.gm
+[info] Loading scripts...
+[info] Starting network...
+[error] Couldn't listen on 172.26.160.1:28970
+[error] Couldn't listen on 192.168.2.100:28970
+[error] Port already in use.
+
+[error] Failed to start network
