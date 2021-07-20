@@ -7,15 +7,10 @@ moar: http://gothic-online.com.pl
 Add the following dependencies for Squirrel and Zengin.
 Since I'm no C++ developer, this could be cleaned up!
 
-Squirrel:
-- Relevant for: GO_Client, GO_Server
-- Add the following path to: Include, External Includes, Library
-- {PathToRepo}\Shared\Squirrel\include
-
-Zengin:
-- Relevant for: GO_Client
-- Add the following path to: Include, External Includes, Library
-- {PathToRepo}\GO_Client\zengin
+You need Qt installed in order to build the launcher!
+See: https://www.qt.io/download-qt-installer
+Afterwards please make sure to set your installed Qt version in the visual studio project settings.
+(Visual Studio Qt Tools required)
 
 # Solutions
 ## GO_Launcher
