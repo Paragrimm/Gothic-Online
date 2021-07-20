@@ -53,21 +53,21 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>debug\</OutDir>
-    <IntDir>debug\</IntDir>
+    <OutDir>$(SolutionDir)output\$(Configuration)\Client\</OutDir>
+    <IntDir>$(Configuration)</IntDir>
     <TargetName>GO_Launcher</TargetName>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>release\</OutDir>
-    <IntDir>release\</IntDir>
+    <OutDir>$(SolutionDir)output\$(Configuration)\Client\</OutDir>
+    <IntDir>$(Configuration)</IntDir>
     <TargetName>GO_Launcher</TargetName>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <QtInstall>5.12.11</QtInstall>
     <QtModules>core;network;gui;widgets</QtModules>
+    <QtInstall>5.12.11</QtInstall>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <QtInstall>5.12.11</QtInstall>
@@ -140,7 +140,11 @@
       <QtUicFileName>ui_%(Filename).h</QtUicFileName>
     </QtUic>
     <PostBuildEvent>
-      <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"</Command>
+      <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"
+mkdir "$(OutDir)lang"
+xcopy /y /d "lang" "$(OutDir)lang"
+mkdir "$(OutDir)Multiplayer"
+xcopy /y /d "Multiplayer" "$(OutDir)Multiplayer"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -204,8 +208,10 @@
     </QtUic>
     <PostBuildEvent>
       <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"
-xcopy /y /d "lang" "$(OutDir)/lang"
-xcopy /y /d "Multiplayer" "$(OutDir)/Multiplayer"</Command>
+mkdir "$(OutDir)lang"
+xcopy /y /d "lang" "$(OutDir)lang"
+mkdir "$(OutDir)Multiplayer"
+xcopy /y /d "Multiplayer" "$(OutDir)Multiplayer"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
