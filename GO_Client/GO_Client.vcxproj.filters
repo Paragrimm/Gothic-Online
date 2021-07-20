@@ -2,208 +2,208 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Default Project Files">
-      <UniqueIdentifier>{dec7e72d-61af-4606-a733-0f97bd6f2796}</UniqueIdentifier>
+      <UniqueIdentifier>{f20bc9c1-9537-4b15-8523-e557aa19d1e5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Default Project Files\Header Files">
-      <UniqueIdentifier>{8b0ab930-01c4-4ed6-938b-342e8869f2ba}</UniqueIdentifier>
+      <UniqueIdentifier>{827fa701-b47f-40ec-b8be-d9e06b273224}</UniqueIdentifier>
     </Filter>
     <Filter Include="Default Project Files\Header Files\Source Files">
-      <UniqueIdentifier>{e293c07f-0fcc-417d-b693-613d8bc48f20}</UniqueIdentifier>
+      <UniqueIdentifier>{659c23b6-e5f9-461e-96bc-5b503a8fedd7}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin">
-      <UniqueIdentifier>{a1197135-f35d-42e7-bb6a-8c6c4c05060b}</UniqueIdentifier>
+      <UniqueIdentifier>{0dda22e2-dbae-4702-8272-e54b219a1116}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\GameManager">
-      <UniqueIdentifier>{c60c3aae-a0eb-4aa9-a5cd-7ca986438da3}</UniqueIdentifier>
+      <UniqueIdentifier>{421fd3e7-e73f-4ccb-92d1-90dac4912d37}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oAniCtrl_Human">
-      <UniqueIdentifier>{8bc4483a-c387-4a37-bf1f-5c55b452ddf2}</UniqueIdentifier>
+      <UniqueIdentifier>{cec3b521-03cc-4c30-88c0-5dc49f67400d}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oGame">
-      <UniqueIdentifier>{cd27dad3-58e2-46c9-b29b-5d4c6c48d37d}</UniqueIdentifier>
+      <UniqueIdentifier>{f3a80d83-d7db-4f58-b9d2-eda826e2650e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oItem">
-      <UniqueIdentifier>{8f25dc7e-44a7-4ab8-8b66-146dad4d5e2a}</UniqueIdentifier>
+      <UniqueIdentifier>{8b031752-9ab0-4998-a045-c9cb4dec35bd}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oNpc">
-      <UniqueIdentifier>{10446821-fea5-4e76-8db3-aaa34932f5f1}</UniqueIdentifier>
+      <UniqueIdentifier>{3ffd0bea-06c1-4318-983d-3b688edde000}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oObjFactory">
-      <UniqueIdentifier>{3c6da61a-2f25-4f80-b3d3-44513737518f}</UniqueIdentifier>
+      <UniqueIdentifier>{a9ed86af-e4e1-4f72-a4b0-21d1e5d7c18d}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oSpawnManager">
-      <UniqueIdentifier>{77aabe5c-9d2c-4140-b76f-7d16b27f0bdc}</UniqueIdentifier>
+      <UniqueIdentifier>{18420167-d30d-4df8-8b5c-06a9fba3a3fe}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oSpell">
-      <UniqueIdentifier>{987b0700-9b5b-4104-a2e9-6b3b1775ad14}</UniqueIdentifier>
+      <UniqueIdentifier>{3e4a673e-e6f4-4296-aba0-16b8c6f4389d}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oView">
-      <UniqueIdentifier>{5bb575a2-6664-4bba-9125-13aa7089a3ec}</UniqueIdentifier>
+      <UniqueIdentifier>{cbf7f429-5461-4125-93de-2838f10edc34}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oVob">
-      <UniqueIdentifier>{74d2939f-5b70-4c4c-81eb-a5fc93526cc9}</UniqueIdentifier>
+      <UniqueIdentifier>{5f865163-708a-42f9-bb15-eb0361390581}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oWorldTimer">
-      <UniqueIdentifier>{95fb6e18-04c7-4413-b63b-fbfad67c3aba}</UniqueIdentifier>
+      <UniqueIdentifier>{714c2b64-5818-48da-bd4a-6fb21403ab2e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zAiPlayer">
-      <UniqueIdentifier>{5030c02b-8261-4c15-8d0e-91aa44efc207}</UniqueIdentifier>
+      <UniqueIdentifier>{f389909e-2e85-456e-a683-26cd5283df3d}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zBspTree">
-      <UniqueIdentifier>{71b09a92-6bc6-4782-a8c6-c0fa77a5342f}</UniqueIdentifier>
+      <UniqueIdentifier>{fb046b74-c30a-480f-a6c5-1f18cb48e988}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zConsole">
-      <UniqueIdentifier>{0c43f71e-f99a-4099-9df0-ea0ef75c9d87}</UniqueIdentifier>
+      <UniqueIdentifier>{414b5e8e-5746-4263-a212-c7a8e1032adf}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zCamera">
-      <UniqueIdentifier>{d46c4d40-8d3d-4d03-a3bf-ee6729b01db3}</UniqueIdentifier>
+      <UniqueIdentifier>{da397286-cde7-430d-8181-6685a236bfe3}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zInput">
-      <UniqueIdentifier>{b3da8fb1-6ee5-4cac-b390-a181bb69399e}</UniqueIdentifier>
+      <UniqueIdentifier>{f73d0852-401a-4f53-bffc-4b156f260f34}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zModel">
-      <UniqueIdentifier>{f0c37670-f7e4-4800-8cf1-c74787225dcb}</UniqueIdentifier>
+      <UniqueIdentifier>{4b37e52c-4120-4883-8caf-df6356bff21b}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zObject">
-      <UniqueIdentifier>{7fa69870-82e1-46c5-99fb-6841fe12f3f4}</UniqueIdentifier>
+      <UniqueIdentifier>{b5425014-c071-45ec-9df1-007f3694e3b6}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zOption">
-      <UniqueIdentifier>{079b0b54-c7f8-420c-b3f9-7878a8266c31}</UniqueIdentifier>
+      <UniqueIdentifier>{d6405fba-bee7-441b-988c-0aa42246bde2}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zPar_Symbol">
-      <UniqueIdentifier>{cafe8f7e-00b1-4787-bfbb-d3533b58041a}</UniqueIdentifier>
+      <UniqueIdentifier>{959781b1-34ca-47c5-85d4-9d4723aa797f}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zParser">
-      <UniqueIdentifier>{b33c37ac-de26-40d3-b26e-40a0509fb228}</UniqueIdentifier>
+      <UniqueIdentifier>{06b5f5bb-f946-45f2-a33d-e2e6986f630b}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zRenderer">
-      <UniqueIdentifier>{7f64018f-12ff-498e-bfec-9c5fa8faf946}</UniqueIdentifier>
+      <UniqueIdentifier>{1fe1f500-96ab-4f7a-9579-59bebafbd2a2}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zSession">
-      <UniqueIdentifier>{c619dcca-1b93-465e-9f26-04c8f26a11cd}</UniqueIdentifier>
+      <UniqueIdentifier>{2b51df15-0e0d-4b8e-bdff-65d378e54740}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zSkyController">
-      <UniqueIdentifier>{d4a690bb-956a-469b-8707-10d2bcf8da4a}</UniqueIdentifier>
+      <UniqueIdentifier>{9a4c2f10-ccee-464c-8044-eb784c029131}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zSoundSystem">
-      <UniqueIdentifier>{364aaf86-3a0d-4f2e-9df0-5a4dd83e2199}</UniqueIdentifier>
+      <UniqueIdentifier>{143b6c80-cee6-40a6-b8db-d63f5c754eb1}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zTimer">
-      <UniqueIdentifier>{9dd56b81-d7a3-405e-a5cc-6c6d82cb292c}</UniqueIdentifier>
+      <UniqueIdentifier>{4690eaf5-2f03-4c54-a5a0-bbf95ef50097}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zView">
-      <UniqueIdentifier>{882dd17c-d8ae-42a7-a867-3457bb32a844}</UniqueIdentifier>
+      <UniqueIdentifier>{d3d3a436-6291-4701-bfa9-a073a6b7a775}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zVisual">
-      <UniqueIdentifier>{9644f075-f691-4a77-8773-81b2693e17df}</UniqueIdentifier>
+      <UniqueIdentifier>{b8bdecd3-666f-4689-a321-b138c7de6a3e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zWorld">
-      <UniqueIdentifier>{1f083088-3da1-4da9-8ffa-c666b35e2641}</UniqueIdentifier>
+      <UniqueIdentifier>{6ec7923e-c507-456a-b612-0b0ebdddccdb}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zFile">
-      <UniqueIdentifier>{92308e15-9128-4b48-9236-40be3a71209d}</UniqueIdentifier>
+      <UniqueIdentifier>{5e8cdcd6-867d-4550-833d-6859e7dc14a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zTypes">
-      <UniqueIdentifier>{51afb670-f9d8-47d6-ab61-8d1e5f366a43}</UniqueIdentifier>
+      <UniqueIdentifier>{4d80d6f1-1f1d-40f7-9e77-f1e2561cf7a0}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zTypes\zSTRING">
-      <UniqueIdentifier>{c9c04f5c-f288-494a-b58d-9081388f73ae}</UniqueIdentifier>
+      <UniqueIdentifier>{b705b1e1-13a5-46a2-8168-9d0315e046df}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\oMob">
-      <UniqueIdentifier>{7c5b8a94-a61a-4f5c-932f-31a09fa8d152}</UniqueIdentifier>
+      <UniqueIdentifier>{cb95e4ac-fccf-4836-84b1-c37a36f522d2}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\Hooks">
-      <UniqueIdentifier>{c1c2d115-6345-4089-b246-b22e3fdf8b92}</UniqueIdentifier>
+      <UniqueIdentifier>{48c7e8d9-db07-460a-a5b5-1cf92b85cfb1}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\zVob">
-      <UniqueIdentifier>{d6916b80-db10-4240-9dda-e5b09b35affa}</UniqueIdentifier>
+      <UniqueIdentifier>{cbb2edba-99e7-48b3-84e7-11339e2be502}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\GameToggle">
-      <UniqueIdentifier>{569a126a-1b85-4bfa-9010-50acebb586b8}</UniqueIdentifier>
+      <UniqueIdentifier>{837de911-96c4-4e22-b4e7-4160f5bb78cb}</UniqueIdentifier>
     </Filter>
     <Filter Include="ZenGin\Mouse">
-      <UniqueIdentifier>{5acd4e8f-e0a2-4be5-b6a3-314167193424}</UniqueIdentifier>
+      <UniqueIdentifier>{af6eae5d-63e9-401b-bca1-674b1c934ade}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared">
-      <UniqueIdentifier>{fb7fe11c-b154-4849-8cb9-f66df9e6a09b}</UniqueIdentifier>
+      <UniqueIdentifier>{9c854a07-e945-4e22-8e24-02e3deaa7bbe}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\RakNet">
-      <UniqueIdentifier>{03e6967e-145b-4ff9-bbc2-654b4a92d87e}</UniqueIdentifier>
+      <UniqueIdentifier>{484902ff-7b65-488e-a691-dcdda6178efc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\goMath">
-      <UniqueIdentifier>{bd0b1fdc-3489-4ce5-883f-5bdefbeb0a5f}</UniqueIdentifier>
+      <UniqueIdentifier>{0c7a716c-d6a7-402d-9520-521616c03f34}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\TinyXML">
-      <UniqueIdentifier>{be0a860f-54f1-4ff2-84d8-fc2b9b4b9403}</UniqueIdentifier>
+      <UniqueIdentifier>{0bbea028-17ff-4046-a930-9b63a1512f6f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\List">
-      <UniqueIdentifier>{a3e92264-6cde-4d13-af67-8fb55cad2dfd}</UniqueIdentifier>
+      <UniqueIdentifier>{c8bd9b26-6cc3-4e3c-965a-2128a198adbe}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Network">
-      <UniqueIdentifier>{8be72cd4-42f5-49be-834b-b822f113a611}</UniqueIdentifier>
+      <UniqueIdentifier>{eca93cd7-2261-43b9-8216-84a5310817ad}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\HashLib++">
-      <UniqueIdentifier>{9d7a39fe-8daa-410f-a076-6061f1b3d3c8}</UniqueIdentifier>
+      <UniqueIdentifier>{1007735b-d17e-4c69-92ed-f3d169a20683}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Utility">
-      <UniqueIdentifier>{022d7da7-0371-4cf2-805b-aa9b8091411a}</UniqueIdentifier>
+      <UniqueIdentifier>{a4b0facc-cbcb-43c6-bd27-53a5795332b6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Squirrel">
-      <UniqueIdentifier>{26716612-5bc1-42cf-a217-bf2355744de0}</UniqueIdentifier>
+      <UniqueIdentifier>{214fea2c-6012-4d1a-bbc2-5ebc41d294a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Squirrel\binmodule">
-      <UniqueIdentifier>{7d480c21-9cdd-4482-a0b2-c7d79f76bcfd}</UniqueIdentifier>
+      <UniqueIdentifier>{0eb02582-53ab-47b0-a001-310ed5ce0415}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Squirrel\include">
-      <UniqueIdentifier>{fbb99e22-2dc4-4f96-8ee8-7f1921191b77}</UniqueIdentifier>
+      <UniqueIdentifier>{16a74998-3232-4c38-aafc-cc0add036a7b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Squirrel\squirrel">
-      <UniqueIdentifier>{c7f4c4a0-1abf-4530-bb50-8db483140867}</UniqueIdentifier>
+      <UniqueIdentifier>{9e045f2c-c214-4ddd-bd70-699397046eb2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shared\Squirrel\sqstdlib">
-      <UniqueIdentifier>{9269d4b2-4024-4cfc-b3ad-0d1135923cb5}</UniqueIdentifier>
+      <UniqueIdentifier>{b5151bd5-7b6a-4836-88d5-550939d5922c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core">
-      <UniqueIdentifier>{f7b399f6-d5ad-422c-beb9-63eb7f850036}</UniqueIdentifier>
+      <UniqueIdentifier>{b9116459-abea-4bec-8ac4-645c7813716e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\DevTools">
-      <UniqueIdentifier>{cb26c886-5422-45c1-af8d-dbbeb2931679}</UniqueIdentifier>
+      <UniqueIdentifier>{550d8577-f738-4aba-bc55-aee49bfef70a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\DevTools\Log">
-      <UniqueIdentifier>{eb013268-dc86-4907-a8d7-b19a90c522f6}</UniqueIdentifier>
+      <UniqueIdentifier>{340efb89-6412-4fb9-a643-8a665b01ee5d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Managers">
-      <UniqueIdentifier>{5edea741-eab6-4583-9542-ae3cfd245c58}</UniqueIdentifier>
+      <UniqueIdentifier>{3dcc4d47-50c5-4383-80d3-91bda9bba15f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Local player">
-      <UniqueIdentifier>{aa9bf15b-7233-4f46-90e8-c7f427a6313d}</UniqueIdentifier>
+      <UniqueIdentifier>{ed4f7ec2-cdfc-48ee-a8d0-3b89ea6bc5ca}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\RPC">
-      <UniqueIdentifier>{7f16f82a-cab1-489a-9f3c-dc0014bc90a8}</UniqueIdentifier>
+      <UniqueIdentifier>{7b24572c-041b-4d69-a67c-8206b1ca0598}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Interface">
-      <UniqueIdentifier>{f5e06082-bee4-4176-a25d-8ffc743f918c}</UniqueIdentifier>
+      <UniqueIdentifier>{c161e221-d1eb-498f-8364-eef754d38900}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects">
-      <UniqueIdentifier>{7493164a-5f8c-46a5-8e73-e6343be57b8d}</UniqueIdentifier>
+      <UniqueIdentifier>{754b37fc-2610-45ce-ae04-9f3e83ab6656}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects\Item">
-      <UniqueIdentifier>{a67452db-ffd1-4370-aeb9-a18cf512abe4}</UniqueIdentifier>
+      <UniqueIdentifier>{50070fa1-2292-4659-b942-ec29ba893dc6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects\Creatures">
-      <UniqueIdentifier>{47205a5a-4c47-4709-80e3-4782555c95b2}</UniqueIdentifier>
+      <UniqueIdentifier>{b89af57b-daab-4497-8c3f-494338c86c05}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Objects\Vobs">
-      <UniqueIdentifier>{9e1a643a-c41b-4cb2-8808-dbe985dad1b1}</UniqueIdentifier>
+      <UniqueIdentifier>{94ae88e4-986d-4aa5-ac39-7cca47e0f438}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Script">
-      <UniqueIdentifier>{10936b97-2d49-44d4-ba93-2351a5d73e14}</UniqueIdentifier>
+      <UniqueIdentifier>{70fdc79a-0c62-439f-9f95-555a348a9f23}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\Keyboard">
-      <UniqueIdentifier>{7726ecd7-f2bf-49b7-ab9f-889f04793e09}</UniqueIdentifier>
+      <UniqueIdentifier>{9172137f-95ef-43de-8c9b-47d3b2cdc3a0}</UniqueIdentifier>
     </Filter>
     <Filter Include="MemLib">
-      <UniqueIdentifier>{933fe145-f429-43fd-aa8b-03ce46b6797d}</UniqueIdentifier>
+      <UniqueIdentifier>{72837577-d4d8-4c43-8712-07e63413aa81}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

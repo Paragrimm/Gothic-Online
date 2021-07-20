@@ -61,7 +61,9 @@ void ConnectionRPC::PleaseConnect(CNetwork* network, BitStream& stream, SystemAd
 	stream.Read(playerName);
 
 	//Tu powinno byc sprawdzenie wersji klienta
-	if( versionNum == versionNumber && strcmp("f7db305af405e4e3b2326aa84a01c39b", dllHash.C_String()) == 0 )
+	// 	   Removed the following for dev purposes!
+	//			&& strcmp("f7db305af405e4e3b2326aa84a01c39b", dllHash.C_String()) == 0
+	if( versionNum == versionNumber)
 	{
 		dllHash.FreeMemory();
 		//Sprawdzenie czy serwer nie jest pe³ny

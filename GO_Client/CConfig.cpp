@@ -73,7 +73,7 @@ bool CConfig::LoadConfigFromFile(RakString fileName)
 			this->clientScript = buff;
 			memset(buff, 0, sizeof(buff));
 		}
-		pElement = root->FirstChildElement( "lang" );
+		pElement = root->FirstChildElement( "language" );
 		if (pElement)
 		{
 			sprintf(buff, "%s\0", pElement->GetText());
@@ -98,6 +98,7 @@ void CConfig::SaveConfigToFile(RakString fileName)
 	fprintf(config, "	<startWorld>%s</startWorld>\n", this->startWorld.C_String());
 	fprintf(config, "	<playerInstance>%s</playerInstance>\n", this->playerInstance.C_String());
 	fprintf(config, "	<clientScript>%s</clientScript>\n", this->clientScript.C_String());
+	fprintf(config, "	<language>%s</language>\n", this->language.C_String());
 	fprintf(config, "</GO_Config>\n");
 	fclose(config);
 };
@@ -112,4 +113,5 @@ void CConfig::SetDefault()
 	this -> startWorld = "WORLD.ZEN";
 	this -> playerInstance = "PC_HERO";
 	this -> clientScript = "client-main.gm";
+	this -> language = "en";
 };

@@ -24,8 +24,8 @@ using namespace std;
 
 //Gothic Online headers
 #include "zengin\\ZenginIncludes.h" //ZenGin (silnik gothica)
-#include "..\\..\\Shared\\GO_SharedIncludes.h" //RakNet, TinyXML, goMath
-#include "..\\..\\Shared\\hashlib\hashlibpp.h"
+#include "..\\Shared\\GO_SharedIncludes.h" //RakNet, TinyXML, goMath
+#include "..\\Shared\\hashlib\hashlibpp.h"
 #include "MemLib\\MemLib.h" //MemLib
 #include "Log\\CLog.h" //Logi
 //Externy
