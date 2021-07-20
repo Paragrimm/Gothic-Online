@@ -140,7 +140,7 @@
       <QtUicFileName>ui_%(Filename).h</QtUicFileName>
     </QtUic>
     <PostBuildEvent>
-      <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"
+      <Command>xcopy /y /d "$(ProjectDir)\DLLs\$(Configuration)\" "$(OutDir)"
 mkdir "$(OutDir)lang"
 xcopy /y /d "lang" "$(OutDir)lang"
 mkdir "$(OutDir)Multiplayer"
@@ -207,7 +207,7 @@ xcopy /y /d "Multiplayer" "$(OutDir)Multiplayer"</Command>
       <QtUicFileName>ui_%(Filename).h</QtUicFileName>
     </QtUic>
     <PostBuildEvent>
-      <Command>xcopy /y /d "DLLs/$(OutDir)" "$(OutDir)"
+      <Command>xcopy /y /d "$(ProjectDir)\DLLs\$(Configuration)\" "$(OutDir)"
 mkdir "$(OutDir)lang"
 xcopy /y /d "lang" "$(OutDir)lang"
 mkdir "$(OutDir)Multiplayer"
