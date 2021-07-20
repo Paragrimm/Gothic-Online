@@ -112,6 +112,6 @@ void CConfig::SetDefault()
 	this -> serverPort = "28970";
 	this -> startWorld = "WORLD.ZEN";
 	this -> playerInstance = "PC_HERO";
-	this -> clientScript = "client-main.gm";
+	this -> clientScript = "main.nut";
 	this -> language = "en";
 };

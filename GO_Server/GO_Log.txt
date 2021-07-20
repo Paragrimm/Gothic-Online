@@ -60,3 +60,36 @@
 [connection] 172.26.160.1_57222 is trying to connect, index : 0
 [connection] Incoming connection: 172.26.160.1|57222
 [join] Nickname has joined the server 172.26.160.1|57222
+-== Gothic Online Server 0.4.6a ==-
+[info] Config file found
+[config] Server name: Default server name
+[config] Server port: 28970
+[config] Max slots: 32
+[config] Client script: client-main.gm
+[config] Server script: server-main.gm
+[info] Loading scripts...
+[info] Starting network...
+[info] Listening for connections on 172.26.160.1:28970...
+[info] Listening for connections on 192.168.2.100:28970...
+[Downloader] Number of files to download: 0
+[Downloader] Thread started, waiting for peers..
+[connection] 172.26.160.1_53237 is trying to connect, index : 0
+[info] Sending server information to launcher...
+[Downloader] New connection!
+[Downloader] Peer disconnected.
+[connection] 172.26.160.1_57637 is trying to connect, index : 0
+[connection] Incoming connection: 172.26.160.1|57637
+[join] Nickname has joined the server 172.26.160.1|57637
+-== Gothic Online Server 0.4.6a ==-
+[info] Config file found
+[config] Server name: Default server name
+[config] Server port: 28970
+[config] Max slots: 32
+[config] Client script: client-main.gm
+[config] Server script: server-main.gm
+[info] Loading scripts...
+[info] Starting network...
+[info] Listening for connections on 172.26.160.1:28970...
+[info] Listening for connections on 192.168.2.100:28970...
+[Downloader] Number of files to download: 0
+[Downloader] Thread started, waiting for peers..

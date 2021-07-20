@@ -107,6 +107,6 @@ void CConfig::SetDefault()
 	this -> serverPort = "28970";
 	this -> maxSlots = "32";
 	this -> adminPassword = "password";
-	this -> serverScript = "server-main.gm";
-	this -> clientScript = "client-main.gm";
+	this -> serverScript = "main.nut";
+	this -> clientScript = "main.nut";
 };
