@@ -81,6 +81,10 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)Multiplayer\"
+xcopy /y /d "$(ProjectDir)Multiplayer" "$(OutDir)Multiplayer"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -103,6 +107,10 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)Multiplayer\"
+xcopy /y /d "$(ProjectDir)Multiplayer" "$(OutDir)Multiplayer"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Shared\goMath\goMath.h" />
