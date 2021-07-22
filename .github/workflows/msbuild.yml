@@ -4,7 +4,7 @@ on: [push]
 
 env:
   # Path to the solution file relative to the root of the project.
-  SOLUTION_FILE_PATH: .
+  SOLUTION_FILE_PATH: ./GO_Server
 
   # Configuration type to build.
   # You can convert this to a build matrix if you need coverage of multiple configuration types.
@@ -20,29 +20,7 @@ jobs:
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
-
-    - name: Install Qt
-      uses: jurplel/install-qt-action@v2.13.2
-      with:
-        # Directory to install Qt
-        # dir: # optional
-        # Version of Qt to install
-        version: 5.12.11 # optional, default is 5.15.2
-        # Host platform
-        host: linux # optional
-        # Architecture for Windows/Android
-        arch: win64_msvc2017_64 # optional
-        # Additional Qt modules to install
-        # modules: # optional
-        # Whether or not to actually download Qt
-        # cached: # optional, default is false
-        # Whether or not to automatically run setup-python to find a valid python version.
-        setup-python: false # optional, default is true
-        # Qt tools to download--specify comma-separated argument lists which are themselves separated by spaces: <tool_name>,<tool_version>,<tool_arch>
-        # tools: # optional
-        # Whether or not to set environment variables after running aqtinstall
-        # set-env: # optional, default is true
-
+      
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Add additional options to the MSBuild command line here (like platform or verbosity level).
