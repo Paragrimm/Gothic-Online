@@ -31,5 +31,5 @@ jobs:
       with:
         # Artifact name
         # name: # optional, default is artifact
-        path: .
+        path: ./GO_Server/output/Release/Server
     
