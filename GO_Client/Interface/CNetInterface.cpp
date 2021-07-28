@@ -53,7 +53,7 @@ void CNetInterface::Render()
 		{
 			screen->SetFont(zSTRING("Font_Old_20_White_Hi.TGA"));
 			screen->SetFontColor(zCOLOR(247,243,115,255));
-			screen->Print(0,0,zSTRING("W³aœciwoœci sieci"));
+			screen->Print(0,0,zSTRING("Network properties"));
 			screen->SetFontColor(color);
 			screen->SetFont(font);
 			if( net->IsConnected() == true )
@@ -63,18 +63,18 @@ void CNetInterface::Render()
 				//screen->Print(0,400,zSTRING(RakString("Ping: %dms",core.GetMultiplayer()->pingTime).C_String()));
 				screen->Print(0,400,zSTRING(RakString("Ping: %dms",core.GetNetwork()->GetPeer()->GetLastPing(net->GetServerAddress())).C_String()));
 				screen->Print(0,600,zSTRING(RakString("FPS: %d",vidGetFPSRate()).C_String()));
-				screen->Print(0,800,zSTRING(RakString("Odebrane pakiety: %d",this->receivedPacketCount).C_String()));
-				screen->Print(0,1000,zSTRING(RakString("Pakiety zagubione: %f%",rns.packetlossTotal).C_String()));
-				screen->Print(0,1200,zSTRING(RakString("Pakiety zagubione w ostatniej sekundzie: %f%",rns.packetlossLastSecond).C_String()));
-				screen->Print(0,1400,zSTRING(RakString("Bufor wiadomoœci: %d",rns.messagesInResendBuffer).C_String()));
-				screen->Print(0,1600,zSTRING(RakString("Bufor bajtów do wys³ania: %d",rns.bytesInResendBuffer).C_String()));
-				screen->Print(0,1800,zSTRING(RakString("Utworzeni gracze: %d",playerManager.GetNumberOfPlayers()).C_String()));
-				screen->Print(0,2000,zSTRING(RakString("Utworzone przedmioty: %d", itemManager.GetNumberOfItems()).C_String()));
+				screen->Print(0,800,zSTRING(RakString("Received packages: %d",this->receivedPacketCount).C_String()));
+				screen->Print(0,1000,zSTRING(RakString("Lost packages: %f%",rns.packetlossTotal).C_String()));
+				screen->Print(0,1200,zSTRING(RakString("Packages lost at the last second: %f%",rns.packetlossLastSecond).C_String()));
+				screen->Print(0,1400,zSTRING(RakString("Message buffer: %d",rns.messagesInResendBuffer).C_String()));
+				screen->Print(0,1600,zSTRING(RakString("Byte buffer to be sent: %d",rns.bytesInResendBuffer).C_String()));
+				screen->Print(0,1800,zSTRING(RakString("Number of Players: %d",playerManager.GetNumberOfPlayers()).C_String()));
+				screen->Print(0,2000,zSTRING(RakString("Number of Items: %d", itemManager.GetNumberOfItems()).C_String()));
 			}
 			else
 			{
 				screen->SetFontColor(zCOLOR(255,0,0,255));
-				screen->Print((windowMaxPosX/2),(windowMaxPosY/2),zSTRING("Brak po³¹czenia!"));
+				screen->Print((windowMaxPosX/2),(windowMaxPosY/2),zSTRING("No connection!"));
 				screen->SetFontColor(color);
 			}
 		}

@@ -278,6 +278,7 @@ bool CServerManager::updateXmlClient(CServerInfo serverInfo)
         stream << QString("\t<startWorld>%1</startWorld>\n").arg(serverInfo.getWorld());
         stream << QString("\t<playerInstance>%1</playerInstance>\n").arg("PC_HERO");
         stream << QString("\t<clientScript>%1</clientScript>\n").arg(serverInfo.getScript());
+        stream << QString("\t<language>%1</language>\n").arg(LAUNCHER.getLanguage().getCurrentLang());
         stream << "</GO_Config>";
 
         configFile.close();

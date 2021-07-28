@@ -5,6 +5,7 @@
 #include <comdef.h>
 
 #include "CInject.h"
+#include "SLog.h"
 
 // Cancel unicode, only way in Qt
 #define Process32First Process32First
@@ -32,7 +33,7 @@ PROCESS_INFORMATION CInject::RunApplication(const char *path)
 	startupInfo.cb = sizeof(startupInfo);
 
 	if (!CreateProcessA(path, NULL, NULL, NULL, false, NULL, NULL, NULL, &startupInfo, &procInfo)) {
-		fprintf(stderr, "CreateProcess(\"%s\") failed; error code = 0x%08X\n", path, GetLastError());
+		LOG("[error CreateProcess] %s", GetLastError());
 	}
 
 	return procInfo;
@@ -83,8 +84,7 @@ bool CInject::InjectDLL(PROCESS_INFORMATION process, const char *processPath, co
 	if (!LoadLibAddy)
 	{
 		DWORD err = GetLastError();
-		//std::cout << "Can't find LoadLibraryA: " << err << std::endl;
-		fprintf(stderr, "Can't find LoadLibraryA:\n", GetLastError());
+		LOG("[error LoadLibraryA] %s", err);
 		return false;
 	}
 
@@ -92,8 +92,7 @@ bool CInject::InjectDLL(PROCESS_INFORMATION process, const char *processPath, co
 	if (!Proc)
 	{
 		DWORD err = GetLastError();
-		//std::cout << "OpenProcess() failed: " << err << std::endl;
-		fprintf(stderr, "OpenProcess() failed:\n", GetLastError());
+		LOG("[error OpenProcess] %s", err);
 		return false;
 	}
 
@@ -101,8 +100,7 @@ bool CInject::InjectDLL(PROCESS_INFORMATION process, const char *processPath, co
 	if (!RemoteString)
 	{
 		DWORD err = GetLastError();
-		//std::cout << "VirtualAllocEx() failed: " << err << std::endl;
-		fprintf(stderr, "VirtualAllocEx() failed:\n", GetLastError());
+		LOG("[error VirtualAllocEx] %s", err);
 		CloseHandle(Proc);
 		return false;
 	}
@@ -110,8 +108,7 @@ bool CInject::InjectDLL(PROCESS_INFORMATION process, const char *processPath, co
 	if (!WriteProcessMemory(Proc, RemoteString, DLL_PATH, DLL_PATH_SIZE, NULL))
 	{
 		DWORD err = GetLastError();
-		//std::cout << "WriteProcessMemory() failed: " << err << std::endl;
-		fprintf(stderr, "WriteProcessMemory() failed:\n", GetLastError());
+		LOG("[error WriteProcessMemory] %s", err);
 		VirtualFreeEx(Proc, RemoteString, 0, MEM_RELEASE);
 		CloseHandle(Proc);
 		return false;
@@ -121,8 +118,7 @@ bool CInject::InjectDLL(PROCESS_INFORMATION process, const char *processPath, co
 	if (!Thread)
 	{
 		DWORD err = GetLastError();
-		//std::cout << "CreateRemoteThread() failed: " << err << std::endl;
-		fprintf(stderr, "CreateRemoteThread() failed:\n", GetLastError());
+		LOG("[error CreateRemoteThread] %s", err);
 		VirtualFreeEx(Proc, RemoteString, 0, MEM_RELEASE);
 		CloseHandle(Proc);
 		return false;
