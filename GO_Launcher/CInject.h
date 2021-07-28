@@ -7,9 +7,10 @@
 class CInject
 {
 public:
-	DWORD RunApplication(const char *path);
+	PROCESS_INFORMATION RunApplication(const char *path);
 	DWORD GetPID(const char *processName);
-	bool InjectDLL(DWORD processID, const char *path);
+	BOOL IsProcessRunning(DWORD pid);
+	bool InjectDLL(PROCESS_INFORMATION process, const char *processPath, const char *path);
 	bool IsAddressHooked(DWORD oldFunction);
 	bool ImportHook(DWORD startAddress, size_t size, ...);
 	bool RemoveHook(DWORD startAddress);

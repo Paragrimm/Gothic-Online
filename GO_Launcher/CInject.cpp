@@ -11,6 +11,8 @@
 #define Process32Next Process32Next
 #define PROCESSENTRY32 PROCESSENTRY32
 
+#define CREATE_THREAD_ACCESS (PROCESS_CREATE_THREAD | PROCESS_QUERY_INFORMATION | PROCESS_VM_OPERATION | PROCESS_VM_WRITE | PROCESS_VM_READ)
+
 unsigned CInject::GetIndexOfAddress(DWORD oldFunction)
 {
 	for (unsigned i = 0; i < hookList.size(); ++i)
@@ -22,69 +24,128 @@ unsigned CInject::GetIndexOfAddress(DWORD oldFunction)
 	return 0;
 }
 
-DWORD CInject::RunApplication(const char *path)
+PROCESS_INFORMATION CInject::RunApplication(const char *path)
 {
     STARTUPINFOA startupInfo;
 	PROCESS_INFORMATION procInfo;
 	ZeroMemory(&startupInfo, sizeof(startupInfo));
 	startupInfo.cb = sizeof(startupInfo);
 
-    if (CreateProcessA(path, NULL, NULL, NULL, false, NULL, NULL, NULL, &startupInfo, &procInfo))
-        return procInfo.dwProcessId;
+	if (!CreateProcessA(path, NULL, NULL, NULL, false, NULL, NULL, NULL, &startupInfo, &procInfo)) {
+		fprintf(stderr, "CreateProcess(\"%s\") failed; error code = 0x%08X\n", path, GetLastError());
+	}
 
-    return 0;
+	return procInfo;
 }
 
 DWORD CInject::GetPID(const char *processName)
 {
-    PROCESSENTRY32 processInfo;
-	processInfo.dwSize = sizeof(processInfo);
+	DWORD procId = 0;
+	HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 
-	HANDLE hProcessSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
+	if (hSnap != INVALID_HANDLE_VALUE) {
+		PROCESSENTRY32 procEntry;
+		procEntry.dwSize = sizeof(procEntry);
 
-    if (Process32First(hProcessSnapshot, &processInfo))
-	{
-        while (Process32Next(hProcessSnapshot, &processInfo))
-		{
-            if (strcmp(processName, processInfo.szExeFile) == 0)
-			{
-				CloseHandle(hProcessSnapshot);
-				return processInfo.th32ProcessID;
-			}
+		if (Process32First(hSnap, &procEntry)) {
+			do {
+				if (!_stricmp(procEntry.szExeFile, processName)) {
+					procId = procEntry.th32ProcessID;
+					break;
+				}
+			} while (Process32Next(hSnap, &procEntry));
 		}
 	}
-
-	CloseHandle(hProcessSnapshot);
-	return 0;
+	CloseHandle(hSnap);
+	return procId;
 }
 
-bool CInject::InjectDLL(DWORD processID, const char *path)
+BOOL CInject::IsProcessRunning(DWORD pid)
 {
-    if (processID)
+	HANDLE process = OpenProcess(SYNCHRONIZE, FALSE, pid);
+	DWORD ret = WaitForSingleObject(process, 0);
+	CloseHandle(process);
+	return ret == WAIT_TIMEOUT;
+}
+
+bool CInject::InjectDLL(PROCESS_INFORMATION process, const char *processPath, const char *path)
+{
+	LPCSTR DLL_PATH = (LPCSTR)path;
+	int DLL_PATH_SIZE = strlen(DLL_PATH) + 1;
+
+	DWORD ProcessID = process.dwProcessId;
+	while (ProcessID == 0) {
+		ProcessID = GetPID(processPath);
+		Sleep(30);
+	}
+
+	FARPROC LoadLibAddy = GetProcAddress(GetModuleHandle(TEXT("kernel32.dll")), "LoadLibraryA");
+	if (!LoadLibAddy)
 	{
-		FILE *file = fopen(path, "r");
-		if (file)
-		{
-			fclose(file);
+		DWORD err = GetLastError();
+		//std::cout << "Can't find LoadLibraryA: " << err << std::endl;
+		fprintf(stderr, "Can't find LoadLibraryA:\n", GetLastError());
+		return false;
+	}
 
-			LPVOID kernel;
-			LPVOID handleLibrary;
-			HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processID);
+	HANDLE Proc = OpenProcess(CREATE_THREAD_ACCESS, FALSE, ProcessID);
+	if (!Proc)
+	{
+		DWORD err = GetLastError();
+		//std::cout << "OpenProcess() failed: " << err << std::endl;
+		fprintf(stderr, "OpenProcess() failed:\n", GetLastError());
+		return false;
+	}
 
-			if (hProcess)
-			{
-                kernel = (LPVOID)GetProcAddress(GetModuleHandleA("kernel32.dll"), "LoadLibraryA");
-				handleLibrary = VirtualAllocEx(hProcess, NULL, strlen(path), MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
-				WriteProcessMemory(hProcess, (LPVOID)handleLibrary, path, strlen(path), NULL);
-				CreateRemoteThread(hProcess, NULL, NULL, (LPTHREAD_START_ROUTINE)kernel, (LPVOID)handleLibrary, NULL, NULL);
-				CloseHandle(hProcess);
+	LPVOID RemoteString = VirtualAllocEx(Proc, NULL, DLL_PATH_SIZE, MEM_COMMIT, PAGE_READWRITE);
+	if (!RemoteString)
+	{
+		DWORD err = GetLastError();
+		//std::cout << "VirtualAllocEx() failed: " << err << std::endl;
+		fprintf(stderr, "VirtualAllocEx() failed:\n", GetLastError());
+		CloseHandle(Proc);
+		return false;
+	}
 
-				return true;
-			}
-		}
-    }
+	if (!WriteProcessMemory(Proc, RemoteString, DLL_PATH, DLL_PATH_SIZE, NULL))
+	{
+		DWORD err = GetLastError();
+		//std::cout << "WriteProcessMemory() failed: " << err << std::endl;
+		fprintf(stderr, "WriteProcessMemory() failed:\n", GetLastError());
+		VirtualFreeEx(Proc, RemoteString, 0, MEM_RELEASE);
+		CloseHandle(Proc);
+		return false;
+	}
 
-    return false;
+	HANDLE Thread = CreateRemoteThread(Proc, NULL, NULL, (LPTHREAD_START_ROUTINE)LoadLibAddy, RemoteString, NULL, NULL);
+	if (!Thread)
+	{
+		DWORD err = GetLastError();
+		//std::cout << "CreateRemoteThread() failed: " << err << std::endl;
+		fprintf(stderr, "CreateRemoteThread() failed:\n", GetLastError());
+		VirtualFreeEx(Proc, RemoteString, 0, MEM_RELEASE);
+		CloseHandle(Proc);
+		return false;
+	}
+
+	WaitForSingleObject(Thread, INFINITE);
+
+	// If the target process is 32bit, you can use GetExitCodeThread()
+	// to find out if LoadLibraryA() was successful or not.
+	//
+	// If the target process is 64bit, it is much harder to determine
+	// that. You would have to allocate an entire function containing
+	// shellcode that calls LoadLibraryA() and saves the result in
+	// memory that you can then read via ReadProcessMemory().  Or,
+	// you would have to enumerate the target process's modules list
+	// looking for the DLL that you just injected.
+
+	CloseHandle(Thread);
+
+	VirtualFreeEx(Proc, RemoteString, 0, MEM_RELEASE);
+	CloseHandle(Proc);
+
+	return true;
 }
 
 bool CInject::IsAddressHooked(DWORD oldFunction)

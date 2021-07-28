@@ -235,10 +235,10 @@ void CNetwork::onDownloaderComplete()
     m_Downloader.close();
     m_MsgBoxCheckingFiles.close();
 
-    int gothicProcessID = LAUNCHER.getInjector().RunApplication(INJECT_APP_NAME);
-    if (gothicProcessID)
+    PROCESS_INFORMATION gothicProcess = LAUNCHER.getInjector().RunApplication(INJECT_APP_NAME);
+    if (gothicProcess.dwProcessId)
     {
-        if (!LAUNCHER.getInjector().InjectDLL(gothicProcessID, INJECT_DLL_NAME))
+        if (!LAUNCHER.getInjector().InjectDLL(gothicProcess, INJECT_APP_NAME, INJECT_DLL_NAME))
             CMessageBox::warrning(APP_NAME, QString(TRANSLATE("IR_ERR_01")).arg(INJECT_DLL_NAME));
     }
     else

@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"go_icon.ico"
+IDI_ICON1	ICON	DISCARDABLE	"C:\\Users\\henry\\source\\repos\\Gothic-Online\\GO_Launcher\\go_icon.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0
