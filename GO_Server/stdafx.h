@@ -16,7 +16,7 @@ using namespace std;
 //Defines
 //#define DEV_MODE
 #define BAN_LIST RakString("banlist")
-#define versionString "0.4.6a"
+#define versionString "0.4.7a"
 
 #include "Log/Log.h"
 

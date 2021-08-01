@@ -19,7 +19,7 @@ using namespace std;
 //Gothic Online definicja dewelopera
 //#define DEV_MODE
 #define COOP
-#define versionString "v0.4.6a"
+#define versionString "v0.4.7a"
 #define PING_SYNC_LIMIT 800
 
 //Gothic Online headers
