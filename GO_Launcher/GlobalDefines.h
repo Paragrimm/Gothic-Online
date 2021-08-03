@@ -26,7 +26,7 @@
 #define VERSION_LINK_LENGHT         44
 #define VERSION_LINK                'h', 't', 't', 'p', ':', '/', '/', 'g', 'o', 't', 'h', 'i', 'c', '-', 'o', 'n', 'l', 'i', 'n', 'e', '.', 'c', 'o', 'm', '.', 'p', 'l', '/', 'l', 'i', 's', 't', '/', 'v', 'e', 'r', 's', 'i', 'o', 'n', '.', 't', 'x', 't'
 #define VERSION_NAME_LENGHT         6
-#define VERSION_NAME                '0', '.', '4', '.', '6', 'a'
+#define VERSION_NAME                '0', '.', '4', '.', '7', 'a'
 
 #define DEFAULT_PORT 28970
 #define LIST_TIMEOUT 2500
